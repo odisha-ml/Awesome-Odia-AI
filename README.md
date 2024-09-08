@@ -43,7 +43,9 @@ Table of Contents
 - IndicXlit: [Paper](https://arxiv.org/abs/2205.03018)[Web](https://ai4bharat.iitm.ac.in/areas/transliteration/") [Code](https://github.com/AI4Bharat/IndicTrans2) [Demo](https://xlit.ai4bharat.org/) [PyPi](https://pypi.org/project/ai4bharat-transliteration)
 
 ### Language Understanding
+
 ### Language Generation
+
 ### Text Dataset
 
 #### Parallel Translation Corpus
@@ -98,14 +100,15 @@ Table of Contents
 
 ### NLP Libraries / Tools 
 * <a href="https://github.com/anoopkunchukuttan/indic_nlp_library">Indic NLP Library</a> : It is a python based NLP library for Indian language text processing including Odia.
-* <a href="https://indic-ocr.github.io/">Indic-OCR</a> : OCR tools for Indic scripts including Odia. Also, supports Ol Chiki (Santali).
 * <a href="https://github.com/shantipriyap/odia_nlp">Odia Romanization Script</a> : The perl script "odiaroman" maps the Devnagri (Odia) to Latin.
 
 ### Other NLP Resources
 * <a href="http://tdil-dc.in/index.php?lang=en">TDIL</a> : It contains language application, resources, and tools for Indian languages including Odia. It contains many language applications, resources, and tools for Odia such as Odia terminology application, Odia language search engine, wordnet, English-Odia parallel text corpus, English-Odia machine-assisted translation, text-to-speech software, and many more.  
 
 ## Audio
+
 ### Speech Recognition
+
 ### Text-to-Speech
 - Indic-TTS [Paper](https://arxiv.org/abs/2211.09536) [Code](https://github.com/AI4Bharat/Indic-TTS) [Try It Live](https://models.ai4bharat.org/#/tts)] [Video](https://youtu.be/I3eo8IUAP7s)
 
@@ -113,8 +116,11 @@ Table of Contents
 ### Speech Dataset
 * <a href="https://www.iitm.ac.in/donlab/tts/index.php">IIT Madras IndicTTS</a> : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia. The database contains spoken sentences/utterances recorded by both Male and Female native speakers.
 * <a href="http://www.ldcil.org/resourcesSpeechCorpOriya.aspx">LDC-IL</a> :  It includes Odia annotated speech corpora which has voices of 450 different native speakers.
+* 
 ## Computer Vision
+
 ### OCR
+* <a href="https://indic-ocr.github.io/">Indic-OCR</a> : OCR tools for Indic scripts including Odia. Also, supports Ol Chiki (Santali).
 
 ## Events
 - Global Conference: [2023 Pt 2](https://www.youtube.com/live/KZB9bfKkLgM?si=3i9eY22xT-1yZTD8) [2023 Pt 1](https://www.youtube.com/live/GPkWL-9akQc?si=uh0Ay0SKEVlRnX3U) |[2022](https://www.youtube.com/live/MPrU-3s8ccw?si=gxbOFyfI3j3g8UsH) |[2021](https://www.youtube.com/live/iX59_YJzINs?si=TiZmMMeB6Hy28JcZ) |[2020](https://www.youtube.com/live/PF5DScCr5SI?si=znfuwHbrIgHSzgnO)||
