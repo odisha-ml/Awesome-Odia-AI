@@ -7,6 +7,9 @@ Table of Contents
   * [Translation](#translation)
   * [Transliteration](#transliteration)
   * [Language Understanding](#language-understanding)
+   * [Language Model](#language-model)
+   * [Word Embedding](#word-embedding)
+   * [Morphanalyzers](#morphanalyzers)
   * [Language Generation](#language-generation)
   * [Text Classification](#text-classification)
   * [Text Dataset](#text-dataset)
@@ -15,10 +18,6 @@ Table of Contents
     * [Lexical Resources](#lexical-resources)
     * [POS Tagged Corpus](#pos-tagged-corpus)
     * [Dialect Detection Corpus](#dialect-detection-corpus)
-  * [Models](#models)
-      * [Language Model](#language-model)
-      * [Word Embedding](#word-embedding)
-      * [Morphanalyzers](#morphanalyzers)
   * [NLP Libraries / Tools](#nlp-libraries--tools)
   * [Other NLP Resources](#other-nlp-resources)
 * [Audio](#audio)
@@ -31,18 +30,38 @@ Table of Contents
 * [Community](#community)
 
 ## NLP
-
 ### Translation
 
-- Sua: Machine Translation from English to Odia language [Repo](https://github.com/soumendrak/MTEnglish2Odia)
-- IndicTrans: [Paper](https://arxiv.org/abs/2104.05596) [Web](https://ai4bharat.iitm.ac.in/indictrans/)
-- IndicTrans2: [Paper](https://arxiv.org/abs/2305.16307) [Web](https://ai4bharat.iitm.ac.in/indic-trans2/) [Code](https://github.com/AI4Bharat/IndicTrans2)
+- Sua: Machine Translation from English to Odia language [[code](https://github.com/soumendrak/MTEnglish2Odia)]
+- IndicTrans: [[paper](https://arxiv.org/abs/2104.05596)] [[web](https://ai4bharat.iitm.ac.in/indictrans/)]
+- IndicTrans2: [[paper](https://arxiv.org/abs/2305.16307)][[web](https://ai4bharat.iitm.ac.in/indic-trans2/)][[code](https://github.com/AI4Bharat/IndicTrans2)]
   
 ### Transliteration
 
-- IndicXlit: [Paper](https://arxiv.org/abs/2205.03018)[Web](https://ai4bharat.iitm.ac.in/areas/transliteration/") [Code](https://github.com/AI4Bharat/IndicTrans2) [Demo](https://xlit.ai4bharat.org/) [PyPi](https://pypi.org/project/ai4bharat-transliteration)
+- IndicXlit: [[paper](https://arxiv.org/abs/2205.03018)][[web](https://ai4bharat.iitm.ac.in/areas/transliteration/")][[code](https://github.com/AI4Bharat/IndicTrans2) ][[Demo](https://xlit.ai4bharat.org/)][[PyPi](https://pypi.org/project/ai4bharat-transliteration)]
 
 ### Language Understanding
+#### Datasets
+- IndicCorp: Large sentence-level monolingual corpora for 11 Indian languages and Indian English containing 8.5 billions words (250 million sentences) from multiple news domain sources. [[paper]()][[code]()][[web](https://ai4bharat.iitm.ac.in/indiccorp)]  
+- Naamapadam: Training and evaluation datasets for named entity recognition in multiple Indian language. [[paper](https://arxiv.org/abs/2212.10168)][[huggingface](https://huggingface.co/datasets/ai4bharat/naamapadam)][[web](https://ai4bharat.iitm.ac.in/naamapadam/)]  
+- IndicCorp v2: he largest collection of texts for Indic languages consisting of 20.9 billion tokens of which 14.4B tokens correspond to 23 Indic languages and 6.5B tokens of Indian English content curated from Indian websites. [[paper](https://arxiv.org/abs/2212.05409)][[code](https://github.com/AI4Bharat/IndicBERT/tree/main?tab=readme-ov-file#indiccorp-v2)]  
+
+  
+#### Language Model
+- <a href="https://github.com/goru001/nlp-for-odia">Language Model</a> : Pretrained Odia Language Model. 
+- <a href="https://colab.research.google.com/gist/satyapb2002/aeb7bf9a686a9c7294ec5725ff53fa49/odiabert_languagemodel.ipynb#scrollTo=xy_H5EjNTdRE"> BertOdia</a> : Bert-based Odia Language Model.
+- IndicBERT: Multilingual, compact ALBERT language model trained on IndicCorp covering 11 major Indian and English. Small model (18 million parameters) that is competitive with large LMs for Indian language tasks. [[paper](https://aclanthology.org/2020.findings-emnlp.445/)][[code](https://github.com/AI4Bharat/Indic-BERT-v1)][[web](https://ai4bharat.iitm.ac.in/language-understanding)]
+- IndicNER: Named Entity Recognizer models for multiple Indian languages. The models are trained on the Naampadam NER dataset mined from Samanantar parallel corpora. [[paper](https://arxiv.org/abs/2212.10168)][[huggingface](https://huggingface.co/ai4bharat/IndicNER)][[web](https://ai4bharat.iitm.ac.in/language-understanding)]
+- IndicBERTv2: Language model trained on IndicCorp v2 with competitive performance on IndicXTREME [[paper](https://arxiv.org/abs/2212.05409)][[code](https://github.com/AI4Bharat/IndicBERT)][[web](https://ai4bharat.iitm.ac.in/language-understanding)]
+
+#### Word Embedding
+- <a href="https://fasttext.cc/docs/en/crawl-vectors.html">FastText (CommonCrawl + Wikipedia)</a> : Pretrained Word vector (CommonCrawl + Wikipedia). Trained on Common Crawl and Wikipedia using fastText. Select the language "oriya" from the model list.
+- <a href="https://fasttext.cc/docs/en/pretrained-vectors.html">FastText (Wikipedia)</a> : Pretrained Word vector (Wikipedia). Trained on Wikipedia using fastText. Select the language "oriya" from the model list.
+- IndicFT: Word embeddings for 11 Indian languages trained on IndicCorp. The embeddings are based on the fastText model and are well suited for the morphologically rich nature of Indic languages. [[paper](https://indicnlp.ai4bharat.org/papers/arxiv2020_indicnlp_corpus.pdf)][[code]()][[web](https://ai4bharat.iitm.ac.in/indicft)]
+
+  
+#### Morphanalyzers
+* <a href="https://github.com/ai4bharat-indicnlp/indicnlp_corpus">IndicNLP Morphanalyzers</a> : Unsupervised morphanalyzers for 10 Indian languages including Odia learnt using morfessor.
 
 ### Language Generation
 
@@ -57,8 +76,6 @@ Table of Contents
 * <a href="http://preon.iiit.ac.in/~jerin/bhasha/">CVIT PIB</a> : Parallel corpus for En-Indian languages mined from press information bureau website of India. It contains 60K English-Odia parallel sentences.
 * <a href="https://ai4bharat.iitm.ac.in//samanantar/">Samanantar</a> is the largest publicly available parallel corpora collection for Indic languages. The corpus has 49.6M sentence pairs between English to Indian Languages.
 * <a href="https://ai4bharat.iitm.ac.in/bpcc/">BPCC</a> is a comprehensive and publicly available parallel corpus containing a mix of Human labelled data and automatically mined data; totaling to approximately 230 million bitext pairs.
-
-
 
 #### Monolingual Corpus
 * <a href="https://www.lancaster.ac.uk/fass/projects/corpus/emille/">EMILLE Corpus</a> : It contains fourteen monolingual corpora for Indian languages including Odia.<a href="https://www.lancaster.ac.uk/fass/projects/corpus/emille/MANUAL.htm">Manual</a> 
@@ -75,24 +92,8 @@ Table of Contents
 *  <a href="https://github.com/UniversalDependencies/UD_Odia-ODTB/tree/dev">Odia Treebank</a> : The treebank contains approx. 1082 tokens (100 sentences) in Odia.
 <a href="https://lnkd.in/evgspdqm">Paper</a>
 
-
 #### Dialect Detection corpus
 * <a href="https://github.com/shantipriyap/Odia-Santali-Dialect-Detection-Dataset/">Odia-Santali Dialect Detection Corpus</a> : This corpus contains text data of Odia and Santali written in Odia script. 
-
-### Models
-
-#### Language Model
-* <a href="https://github.com/goru001/nlp-for-odia">Language Model</a> : Pretrained Odia Language Model. 
-* <a href="https://colab.research.google.com/gist/satyapb2002/aeb7bf9a686a9c7294ec5725ff53fa49/odiabert_languagemodel.ipynb#scrollTo=xy_H5EjNTdRE">BertOdia</a> : Bert-based Odia Language Model.
-
-#### Word Embedding
-* <a href="https://fasttext.cc/docs/en/crawl-vectors.html">FastText (CommonCrawl + Wikipedia)</a> : Pretrained Word vector (CommonCrawl + Wikipedia). Trained on Common Crawl and Wikipedia using fastText. Select the language "oriya" from the model list.
-* <a href="https://fasttext.cc/docs/en/pretrained-vectors.html">FastText (Wikipedia)</a> : Pretrained Word vector (Wikipedia). Trained on Wikipedia using fastText. Select the language "oriya" from the model list.
-* <a href="https://github.com/ai4bharat-indicnlp/indicnlp_corpus">AI4Bharat IndicNLP Project</a> : Pretrained Word embeddings for 10 Indian languages including Odia. <a href="https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf">Paper</a>
-
-#### Morphanalyzers
-* <a href="https://github.com/ai4bharat-indicnlp/indicnlp_corpus">IndicNLP Morphanalyzers</a> : Unsupervised morphanalyzers for 10 Indian languages including Odia learnt using morfessor.
-
 
 ### Text Classification
 * <a href="https://www.kaggle.com/disisbig/odia-news-dataset">Odia News Article Classification</a> : This dataset contains approxmately 19,000 news article headlines collected from Odia news websites. The labeled dataset is splitted into training and testset suitable for supervised text classification. 
@@ -110,13 +111,13 @@ Table of Contents
 ### Speech Recognition
 
 ### Text-to-Speech
-- Indic-TTS [Paper](https://arxiv.org/abs/2211.09536) [Code](https://github.com/AI4Bharat/Indic-TTS) [Try It Live](https://models.ai4bharat.org/#/tts)] [Video](https://youtu.be/I3eo8IUAP7s)
+- Indic-TTS [[Paper](https://arxiv.org/abs/2211.09536)][[Code](https://github.com/AI4Bharat/Indic-TTS)] [[Try It Live](https://models.ai4bharat.org/#/tts)]][[Video](https://youtu.be/I3eo8IUAP7s)]
 
 
 ### Speech Dataset
 * <a href="https://www.iitm.ac.in/donlab/tts/index.php">IIT Madras IndicTTS</a> : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia. The database contains spoken sentences/utterances recorded by both Male and Female native speakers.
 * <a href="http://www.ldcil.org/resourcesSpeechCorpOriya.aspx">LDC-IL</a> :  It includes Odia annotated speech corpora which has voices of 450 different native speakers.
-* 
+  
 ## Computer Vision
 
 ### OCR
