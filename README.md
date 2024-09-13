@@ -74,6 +74,29 @@ Curated list of all AI related resources in Odia Language.
 
 ### Language Generation
 
+#### Instruction Set
+
+* [Odia master data llama2](https://huggingface.co/datasets/OdiaGenAI/odia_master_data_llama2): This dataset contains 180k Odia instruction sets translated from open-source instruction sets and Odia domain knowledge instruction sets.
+* [Odia context 10k llama2 set](https://huggingface.co/datasets/OdiaGenAI/odia_context_10K_llama2_set): This dataset contains 10K instructions that span various facets of Odisha's unique identity. The instructions cover a wide array of subjects, ranging from the culinary delights in 'RECIPES,' the historical significance of 'HISTORICAL PLACES,' and 'TEMPLES OF ODISHA,' to the intellectual pursuits in 'ARITHMETIC,' 'HEALTH,' and 'GEOGRAPHY.' It also explores the artistic tapestry of Odisha through 'ART AND CULTURE,' which celebrates renowned figures in 'FAMOUS ODIA POETS/WRITERS', and 'FAMOUS ODIA POLITICAL LEADERS'. Furthermore, it encapsulates 'SPORTS' and the 'GENERAL KNOWLEDGE OF ODISHA,' providing an all-encompassing representation of the state.
+* [Roleplay Odia](https://huggingface.co/datasets/OdiaGenAI/roleplay_odia): This dataset contains 1k Odia role play instruction set in conversation format.
+* [OdiEnCorp translation instructions 25k](https://huggingface.co/datasets/OdiaGenAI/OdiEnCorp_translation_instructions_25k): This dataset contains 25k English-to-Odia translation instruction set.
+
+#### Pe-train Dataset
+
+- [CulturaX](https://huggingface.co/datasets/uonlp/CulturaX): It is a multilingual dataset contains monolingual data for several Indic languages (Hindi, Bangla, Tamil, Malayalam, Marathi, Telugu, Kannada, Gujarati, Punjabi, Odia, Assamese, etc.). [Paper](https://arxiv.org/abs/2309.09400)
+- [Varta](https://huggingface.co/datasets/rahular/varta): The dataset contains 41.8 million news articles in 14 Indic languages and English, crawled from DailyHunt, a popular news aggregator in India that pulls high-quality articles from multiple trusted and reputed news publishers.
+
+### Foundation LLM
+- [Qwen 1.5 Odia 7B](https://huggingface.co/OdiaGenAI-LLM/qwen_1.5_odia_7b): This is a pre-trained Odia large language model with 7 billion parameters, and it is based on Qwen 1.5-7B. The model is pre-trained on the Culturex-Odia dataset, a filtered version of the original CulturaX dataset for Odia text. As per the authors, it is a model is a base model and not meant to be used as is. It is recommended to first finetune it on downstream tasks. [Blog](https://www.odiagenai.org/blog/introducing-odiagenai-s-qwen-based-pre-trained-llm-for-odia-language)
+
+### Fine-Tuned LLM
+- [Odia llama2 7B base](https://huggingface.co/OdiaGenAI/odia_llama2_7B_base): odia_llama2_7B_base is based on Llama2-7b and finetuned with 180k Odia instruction set. [Paper](https://arxiv.org/pdf/2312.12624.pdf)
+
+
+### Benchmarking Set
+* [Airavata Evaluation Suite](https://huggingface.co/collections/ai4bharat/airavata-evaluation-suite-65b13b7b68165de71ba0b333): A collection of benchmarks used for evaluation of Airavata, a Hindi instruction-tuned model on top of Sarvam's OpenHathi base model.
+* [Indic LLM Benchmark](https://huggingface.co/Indic-Benchmark): A collection of LLM benchmark data in Gujurati, Nepali, Malayalam, Hindi, Telugu, Marathi, Kannada, Bengali.
+
 ### Text Dataset
 
 #### Parallel Translation Corpus
