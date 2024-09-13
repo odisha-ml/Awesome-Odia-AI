@@ -87,6 +87,7 @@ Curated list of all AI related resources in Odia Language.
 * [BPCC](https://ai4bharat.iitm.ac.in/bpcc/) is a comprehensive and publicly available parallel corpus containing a mix of Human labelled data and automatically mined data; totaling to approximately 230 million bitext pairs.
 
 #### Monolingual Corpus
+* [Odia News Corpus](https://www.soumendrak.com/blog/scrape-news-website-using-scrapy/) Odia Monolingual News Corpus of more than 1.5GB. [Dataset](https://www.kaggle.com/datasets/soumendrak/odiamonolingualnewscorpus)
 * [EMILLE Corpus](https://www.lancaster.ac.uk/fass/projects/corpus/emille/) : It contains fourteen monolingual corpora for Indian languages including Odia.[Manual](https://www.lancaster.ac.uk/fass/projects/corpus/emille/MANUAL.htm) 
 * [OdiEnCorp 1.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2879) : This dataset contains 221K Odia sentences.[Paper](https://link.springer.com/chapter/10.1007/978-981-13-9282-5_47) 
 * [AI4Bharat-IndicNLP Corpus](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : The text corpus not available now (will be available later). It used 3.5M Odia sentences to build the embedding. Vocabulary frequency files are available.[Paper](https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf)
@@ -111,6 +112,7 @@ Curated list of all AI related resources in Odia Language.
 ### NLP Libraries / Tools 
 * [Indic NLP Library](https://github.com/anoopkunchukuttan/indic_nlp_library) : It is a python based NLP library for Indian language text processing including Odia.
 * [Odia Romanization Script](https://github.com/shantipriyap/odia_nlp) : The perl script "odiaroman" maps the Devnagri (Odia) to Latin.
+- [OpenOdia : Tools for Odia language](https://github.com/soumendrak/openodia)
 
 ### Other NLP Resources
 * [TDIL](http://tdil-dc.in/index.php?lang=en) : It contains language application, resources, and tools for Indian languages including Odia. It contains many language applications, resources, and tools for Odia such as Odia terminology application, Odia language search engine, wordnet, English-Odia parallel text corpus, English-Odia machine-assisted translation, text-to-speech software, and many more.  
@@ -126,15 +128,17 @@ Curated list of all AI related resources in Odia Language.
 ### Speech Dataset
 * [IIT Madras IndicTTS](https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia. The database contains spoken sentences/utterances recorded by both Male and Female native speakers.
 * [LDC-IL](http://www.ldcil.org/resourcesSpeechCorpOriya.aspx) :  It includes Odia annotated speech corpora which has voices of 450 different native speakers.
+- [Mozilla Common Voice](https://commonvoice.mozilla.org/or/datasets) : The Mozilla Common Voice project is a community-led project to build a large multilingual dataset for speech recognition.
   
 ## Computer Vision
 
 ### OCR
-* [Indic-OCR](https://indic-ocr.github.io/) : OCR tools for Indic scripts including Odia. Also, supports Ol Chiki (Santali).
+* [Indic-OCR](https://indic-ocr.github.io/) : OCR tools for Indic scripts including Odia. Also, supports _Ol Chiki_ (Santali).
 
 ## Events
 - Global Conference: [2023 Pt 2](https://www.youtube.com/live/KZB9bfKkLgM?si=3i9eY22xT-1yZTD8) [2023 Pt 1](https://www.youtube.com/live/GPkWL-9akQc?si=uh0Ay0SKEVlRnX3U) |[2022](https://www.youtube.com/live/MPrU-3s8ccw?si=gxbOFyfI3j3g8UsH) |[2021](https://www.youtube.com/live/iX59_YJzINs?si=TiZmMMeB6Hy28JcZ) |[2020](https://www.youtube.com/live/PF5DScCr5SI?si=znfuwHbrIgHSzgnO)||
 - Summer School: [2022](https://youtube.com/playlist?list=PLQCNXbSwgbGwMW4rGHr_LIfSCMh-7lgbR&si=f_b94K73yVAKST1E) ||
 
 ## Community
-- [Odias in AI/ML](https://www.odishaai.org/)
+- [Odisha AI](https://www.odishaai.org/)
+- [Odia Generative AI](https://www.odiagenai.org/)
