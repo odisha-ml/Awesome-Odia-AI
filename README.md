@@ -152,6 +152,7 @@ Curated list of all AI related resources in Odia Language.
 * [IIT Madras IndicTTS](https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia. The database contains spoken sentences/utterances recorded by both Male and Female native speakers.
 * [LDC-IL](https://data.ldcil.org/speech/speech-raw-corpus/odia-raw-speech-corpuss) :  It includes Odia annotated speech corpora which has voices of 450 different native speakers.
 - [Mozilla Common Voice](https://commonvoice.mozilla.org/or/datasets) : The Mozilla Common Voice project is a community-led project to build a large multilingual dataset for speech recognition.
+- [Odia text to speech dataset](https://commons.wikimedia.org/wiki/Category:Odia_pronunciation)
   
 ## Computer Vision
 
