@@ -34,6 +34,7 @@ Curated list of all AI related resources in Odia Language.
   - [OCR](#ocr)
 - [Events](#events)
 - [Community](#community)
+  - [Policy & Ecosystem](#policy--ecosystem)
 
 </details>
 
@@ -43,6 +44,8 @@ Curated list of all AI related resources in Odia Language.
 - Sua: Machine Translation from English to Odia language [[dataset](https://github.com/soumendrak/MTEnglish2Odia)[code](https://github.com/OdiaNLP/NMT)]
 - IndicTrans: [[paper](https://arxiv.org/abs/2104.05596)] [[web](https://ai4bharat.iitm.ac.in/areas/model/NMT/IndicTrans)]
 - IndicTrans2: [[paper](https://arxiv.org/abs/2305.16307)][[web](https://ai4bharat.iitm.ac.in/areas/model/NMT/IndicTrans2)][[code](https://github.com/AI4Bharat/IndicTrans2)]
+- WAT 2025 NLLB-200 Fine-tuned Model: A highly optimized 3.3B parameter neural machine translation model scored on WAT 2025. [[model](https://huggingface.co/OdiaGenAI/facebook-nllb-200-3.3B-finetuned-odia)]
+- NLTM-EILMT Bhashini Translation API System: The sovereign, Bhashini-backed open-source repository providing robust, production-ready bi-directional API/REST endpoints for English to Odia machine translation. [[code](https://github.com/eilmt/NLTM-EILMT)]
   
 ### Transliteration
 
@@ -54,6 +57,7 @@ Curated list of all AI related resources in Odia Language.
 - IndicCorp: Large sentence-level monolingual corpora for 11 Indian languages and Indian English containing 8.5 billions words (250 million sentences) from multiple news domain sources. [[paper](https://aclanthology.org/2020.findings-emnlp.445/)][[code](https://github.com/AI4Bharat/Indic-BERT-v1)][[web](https://ai4bharat.iitm.ac.in/areas/llm)]  
 - Naamapadam: Training and evaluation datasets for named entity recognition in multiple Indian language. [[paper](https://arxiv.org/abs/2212.10168)][[huggingface](https://huggingface.co/datasets/ai4bharat/naamapadam)][[web](https://ai4bharat.iitm.ac.in/areas/llm)]  
 - IndicCorp v2: he largest collection of texts for Indic languages consisting of 20.9 billion tokens of which 14.4B tokens correspond to 23 Indic languages and 6.5B tokens of Indian English content curated from Indian websites. [[paper](https://arxiv.org/abs/2212.05409)][[code](https://github.com/AI4Bharat/IndicBERT/tree/main?tab=readme-ov-file#indiccorp-v2)]  
+- L3Cube-IndicSQuAD (Odia): A meticulously engineered, 118,000+ sample extractive Question Answering dataset. [[dataset](https://huggingface.co/datasets/l3cube-pune/indic-squad)]
 
   
 #### Language Model
@@ -62,6 +66,7 @@ Curated list of all AI related resources in Odia Language.
 - IndicBERT: Multilingual, compact ALBERT language model trained on IndicCorp covering 11 major Indian and English. Small model (18 million parameters) that is competitive with large LMs for Indian language tasks. [[paper](https://aclanthology.org/2020.findings-emnlp.445/)][[code](https://github.com/AI4Bharat/Indic-BERT-v1)][[web](https://ai4bharat.iitm.ac.in/areas/model/LLM/IndicBERT)]
 - IndicNER: Named Entity Recognizer models for multiple Indian languages. The models are trained on the Naampadam NER dataset mined from Samanantar parallel corpora. [[paper](https://arxiv.org/abs/2212.10168)][[huggingface](https://huggingface.co/ai4bharat/IndicNER)][[web](https://ai4bharat.iitm.ac.in/language-understanding)]
 - IndicBERTv2: Language model trained on IndicCorp v2 with competitive performance on IndicXTREME [[paper](https://arxiv.org/abs/2212.05409)][[code](https://github.com/AI4Bharat/IndicBERT)][[web](https://ai4bharat.iitm.ac.in/areas/model/LLM/IndicBERTv2)]
+- Oriya-BERT-SQuAD: A highly capable 0.2B parameter OdiaBERT model rigorously fine-tuned directly on the IndicSQuAD dataset. [[model](https://huggingface.co/l3cube-pune/oriya-question-answering-squad-bert)]
 
 #### Word Embedding
 - [FastText (CommonCrawl + Wikipedia)](https://fasttext.cc/docs/en/crawl-vectors.html) : Pretrained Word vector (CommonCrawl + Wikipedia). Trained on Common Crawl and Wikipedia using fastText. Select the language "oriya" from the model list.
@@ -80,6 +85,7 @@ Curated list of all AI related resources in Odia Language.
 * [Odia context 10k llama2 set](https://huggingface.co/datasets/OdiaGenAI/odia_context_10K_llama2_set): This dataset contains 10K instructions that span various facets of Odisha's unique identity. The instructions cover a wide array of subjects, ranging from the culinary delights in 'RECIPES,' the historical significance of 'HISTORICAL PLACES,' and 'TEMPLES OF ODISHA,' to the intellectual pursuits in 'ARITHMETIC,' 'HEALTH,' and 'GEOGRAPHY.' It also explores the artistic tapestry of Odisha through 'ART AND CULTURE,' which celebrates renowned figures in 'FAMOUS ODIA POETS/WRITERS', and 'FAMOUS ODIA POLITICAL LEADERS'. Furthermore, it encapsulates 'SPORTS' and the 'GENERAL KNOWLEDGE OF ODISHA,' providing an all-encompassing representation of the state.
 * [Roleplay Odia](https://huggingface.co/datasets/OdiaGenAI/roleplay_odia): This dataset contains 1k Odia role play instruction set in conversation format.
 * [OdiEnCorp translation instructions 25k](https://huggingface.co/datasets/OdiaGenAI/OdiEnCorp_translation_instructions_25k): This dataset contains 25k English-to-Odia translation instruction set.
+* [Odia Reasoning Datasets (GU, OD, OpenThoughts)](https://huggingface.co/datasets/OdiaGenAIdata/Reasoning_OD): A suite of newly compiled, highly validated datasets designed to transition LLMs from basic conversational generation to step-by-step logical reasoning.
 
 #### Pe-train Dataset
 
@@ -91,11 +97,13 @@ Curated list of all AI related resources in Odia Language.
 
 ### Fine-Tuned LLM
 - [Odia llama2 7B base](https://huggingface.co/OdiaGenAI/odia_llama2_7B_base): odia_llama2_7B_base is based on Llama2-7b and finetuned with 180k Odia instruction set. [Paper](https://arxiv.org/pdf/2312.12624.pdf)
+- [Llama3_8B_Odia_Unsloth & Llama 3.x R1 Scalable Series](https://huggingface.co/OdiaGenAI-LLM/Llama3_8B_Odia_Unsloth): Advanced Llama-3 based generative models optimized using the Unsloth library with 4-bit bnb quantization.
 
 
 ### Benchmarking Set
 * [Airavata Evaluation Suite](https://huggingface.co/collections/ai4bharat/airavata-evaluation-suite-65b13b7b68165de71ba0b333): A collection of benchmarks used for evaluation of Airavata, a Hindi instruction-tuned model on top of Sarvam's OpenHathi base model.
 * [Indic LLM Benchmark](https://huggingface.co/Indic-Benchmark): A collection of LLM benchmark data in Gujurati, Nepali, Malayalam, Hindi, Telugu, Marathi, Kannada, Bengali.
+* [MILU: Multi-task Indic Language Understanding](https://github.com/AI4Bharat/MILU): A comprehensive, culturally grounded evaluation framework featuring 4,525 highly verified Odia questions spanning 41 distinct domains.
 
 ### Text Dataset
 
@@ -115,6 +123,7 @@ Curated list of all AI related resources in Odia Language.
 * [OdiEnCorp 1.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2879) : This dataset contains 221K Odia sentences.[Paper](https://link.springer.com/chapter/10.1007/978-981-13-9282-5_47) 
 * [AI4Bharat-IndicNLP Corpus](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : The text corpus not available now (will be available later). It used 3.5M Odia sentences to build the embedding. Vocabulary frequency files are available.[Paper](https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf)
 * [OSCAR Corpus](https://oscar-corpus.com/) : It contains around 300K Odia sentences.
+* [Large Odia LLM Pre-training Corpus (pre_train_odia_data_processed)](https://huggingface.co/datasets/OdiaGenAIdata/pre_train_odia_data_processed): A uniformly processed, aggressively deduplicated amalgamation of massive Odia text data of 6.4GB.
 
 #### Lexical Resources
 * [IndoWordNet](http://www.cfilt.iitb.ac.in/indowordnet/) : Wordnet for Indian languages including Odia.
@@ -131,6 +140,8 @@ Curated list of all AI related resources in Odia Language.
 ### Text Classification
 * [Odia News Article Classification](https://www.kaggle.com/disisbig/odia-news-dataset) : This dataset contains approxmately 19,000 news article headlines collected from Odia news websites. The labeled dataset is splitted into training and testset suitable for supervised text classification. 
 * [AI4Bharat IndicNLP News Articles](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : This datasets comprising news articles and their categories for 9 languages including Odia. For Odia language, it has 4 classes (business, crime, entertainment, sports) and each class contains 7.5K news articles. The dataset is balanced across classes. [Paper](https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf)
+* [MTEB: OdiaNewsClassification](https://huggingface.co/datasets/mteb/OdiaNewsClassification) : A heavily curated 3-class classification testbed comprising over 17,200 journalistic articles. Officially integrated into the MTEB standard.
+* [Odia Sentiment MuRIL v4](https://huggingface.co/Baps24/odia-sentiment-muril-v4) : An advanced sentiment classifier built natively upon the MuRIL framework.
 
 ### NLP Libraries / Tools 
 * [Indic NLP Library](https://github.com/anoopkunchukuttan/indic_nlp_library) : It is a python based NLP library for Indian language text processing including Odia.
@@ -143,6 +154,7 @@ Curated list of all AI related resources in Odia Language.
 ## Audio
 
 ### Speech Recognition
+- [IndicWav2Vec-Odia](https://huggingface.co/ai4bharat/indicwav2vec-odia) : A foundational acoustic architecture applying the self-supervised wav2vec 2.0 framework directly to unannotated Odia phonetics.
 
 ### Text-to-Speech
 - Indic-TTS [[Paper](https://arxiv.org/abs/2211.09536)][[Code](https://github.com/AI4Bharat/Indic-TTS)] [[Try It Live](https://models.ai4bharat.org/#/tts)]][[Video](https://youtu.be/I3eo8IUAP7s)]
@@ -154,16 +166,23 @@ Curated list of all AI related resources in Odia Language.
 - [Mozilla Common Voice](https://mozilladatacollective.com/datasets/cmn2cww3s01dfo107etbjbif1) : The Mozilla Common Voice project is a community-led project to build a large multilingual dataset for speech recognition.
 - [Odia text to speech dataset](https://commons.wikimedia.org/wiki/Category:Odia_pronunciation) : 55000 odia words pronunced in various dialets of Odisha like Baleswari, Puri, Cuttack, etc.
 - [Odia ASR Benchmark Dataset for Noisy Speech Recognition](https://aikosh.indiaai.gov.in/home/datasets/details/odia_asr_benchmark_dataset_for_noisy_speech_recognition_kathath_odia_noisy_test_known.html) : About 500 MB of CC-BY-4.0 data. 
+- [ODEN-speech Corpus](https://huggingface.co/datasets/BBSRguy/ODEN-speech) : A paradigm-shifting 462-hour speech ensemble derived from seamlessly merging 8 disparate corpora, standardized to 16kHz mono audio of size 51.9GB.
   
 ## Computer Vision
 
 ### OCR
 * [Indic-OCR](https://indic-ocr.github.io/) : OCR tools for Indic scripts including Odia. Also, supports _Ol Chiki_ (Santali).
+* [IndicPhotoOCR (Scene Text Recognition)](https://github.com/Bhashini-IITJ/IndicPhotoOCR) : A high-velocity, end-to-end scene text recognition toolkit capable of parsing complex, visually noisy Odia script in organic environments.
+* [DocuExtract: Odia Handwritten OCR](https://github.com/tell2jyoti/docuextract-odia-ocr) : An advanced computational vision system employing progressive vision-language fine-tuning to transcribe stochastic, highly erratic handwritten Odia text.
 
 ## Events
-- Global Conference: [2023 Pt 2](https://www.youtube.com/live/KZB9bfKkLgM?si=3i9eY22xT-1yZTD8) [2023 Pt 1](https://www.youtube.com/live/GPkWL-9akQc?si=uh0Ay0SKEVlRnX3U) |[2022](https://www.youtube.com/live/MPrU-3s8ccw?si=gxbOFyfI3j3g8UsH) |[2021](https://www.youtube.com/live/iX59_YJzINs?si=TiZmMMeB6Hy28JcZ) |[2020](https://www.youtube.com/live/PF5DScCr5SI?si=znfuwHbrIgHSzgnO)||
-- Summer School: [2022](https://youtube.com/playlist?list=PLQCNXbSwgbGwMW4rGHr_LIfSCMh-7lgbR&si=f_b94K73yVAKST1E) ||
+- Global Conference: [ICON 2024](https://au-kbc.org/icon2024/) | [WAT 2025](https://ufal.mff.cuni.cz/wat2025english-indicmultimodaltranslation) | [Odisha AI Summit 2025 & Conference 2024](https://odishaaisummit.org/) | [2023 Pt 2](https://www.youtube.com/live/KZB9bfKkLgM?si=3i9eY22xT-1yZTD8) [2023 Pt 1](https://www.youtube.com/live/GPkWL-9akQc?si=uh0Ay0SKEVlRnX3U) | [2022](https://www.youtube.com/live/MPrU-3s8ccw?si=gxbOFyfI3j3g8UsH) | [2021](https://www.youtube.com/live/iX59_YJzINs?si=TiZmMMeB6Hy28JcZ) | [2020](https://www.youtube.com/live/PF5DScCr5SI?si=znfuwHbrIgHSzgnO)
+- Summer School / Workshop: [OdiaGenAI Generative AI Workshops 2025](https://www.odiagenai.org/workshop-2025) | [2022](https://youtube.com/playlist?list=PLQCNXbSwgbGwMW4rGHr_LIfSCMh-7lgbR&si=f_b94K73yVAKST1E)
 
 ## Community
 - [Odisha AI](https://www.odishaai.org/)
 - [Odia Generative AI](https://www.odiagenai.org/)
+
+### Policy & Ecosystem
+- [Odisha AI Policy 2025 & Taskforce](https://dowr.odisha.gov.in/sites/default/files/2025-07/Odisha%20AI%20Policy-2025.pdf)
+- [National IndiaAI Mission](https://indiaai.gov.in/)
