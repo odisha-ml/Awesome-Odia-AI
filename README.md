@@ -138,8 +138,10 @@ Curated list of all AI related resources in Odia Language.
 
 #### POS Tagged corpus
 * [Indian Language Corpora Initiative](https://web.archive.org/web/20240414185340/http://sanskrit.jnu.ac.in/ilci/index.jsp/) : It contains parallel annotated corpora in 12 Indian languages including Odia (tourism and health domain). 
-*  [Odia Treebank](https://github.com/UniversalDependencies/UD_Odia-ODTB/tree/dev) : The treebank contains approx. 1082 tokens (100 sentences) in Odia.
-[Paper](https://lnkd.in/evgspdqm)
+*  [Odia Treebank (ODTB)](https://github.com/UniversalDependencies/UD_Odia-ODTB/tree/dev) : Odia UD Treebank, now part of **Universal Dependencies v2.18** (24th release, 353 treebanks across 193 languages). Expanded from 1,029 to **5,818 annotated instances**. 
+  - [UD v2.18 Release](https://github.com/UniversalDependencies/UD_RELEASE/releases/tag/v2.18)
+  - [Odia ODTB Treebank Page](https://universaldependencies.org/treebanks/or_odtb/index.html)
+  - Contributors: Shantipriya Parida, Kalyanamalini Sahoo, Atul Kr. Ojha, Biswakalpita Mohapatra, Dr. Satya Ranjan Dash, Bijayalaxmi Dash, Dr. Kusum Lata
 
 #### Dialect Detection corpus
 * [Odia-Santali Dialect Detection Corpus](https://github.com/shantipriyap/Odia-Santali-Dialect-Detection-Dataset/) : This corpus contains text data of Odia and Santali written in Odia script. 
