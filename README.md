@@ -91,7 +91,7 @@ Curated list of all AI related resources in Odia Language.
 
 #### Pe-train Dataset
 
-- [CulturaX](https://huggingface.co/datasets/uonlp/CulturaX): It is a multilingual dataset contains monolingual data for several Indic languages (Hindi, Bangla, Tamil, Malayalam, Marathi, Telugu, Kannada, Gujarati, Punjabi, Odia, Assamese, etc.). [Paper](https://arxiv.org/abs/2309.09400)
+- [CulturaX](https://huggingface.co/datasets/uonlp/CulturaX): Multilingual dataset with monolingual data for Indic languages including Odia. [Paper](https://arxiv.org/abs/2309.09400) — Odia-only filtered version: [culturax-odia](https://huggingface.co/datasets/OdiaGenAIdata/culturax-odia)
 - [Varta](https://huggingface.co/datasets/rahular/varta): The dataset contains 41.8 million news articles in 14 Indic languages and English, crawled from DailyHunt, a popular news aggregator in India that pulls high-quality articles from multiple trusted and reputed news publishers.
 
 ### Foundation LLM
