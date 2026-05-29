@@ -70,14 +70,13 @@ Curated list of all AI related resources in Odia Language.
 - IndicBERTv2: Language model trained on IndicCorp v2 with competitive performance on IndicXTREME [[paper](https://arxiv.org/abs/2212.05409)][[code](https://github.com/AI4Bharat/IndicBERT)][[web](https://ai4bharat.iitm.ac.in/areas/model/LLM/IndicBERTv2)]
 - Oriya-BERT-SQuAD: A highly capable 0.2B parameter OdiaBERT model rigorously fine-tuned directly on the IndicSQuAD dataset. [[model](https://huggingface.co/l3cube-pune/oriya-question-answering-squad-bert)]
 - [odia-bert](https://huggingface.co/l3cube-pune/odia-bert) : A fill-mask BERT model (753+ downloads) specifically pretrained for Odia language understanding tasks.
-- [odia-sentence-similarity-sbert](https://huggingface.co/l3cube-pune/odia-sentence-similarity-sbert) : Sentence-BERT model for Odia semantic similarity and embedding.
-- [odia-sentence-bert-nli](https://huggingface.co/l3cube-pune/odia-sentence-bert-nli) : Sentence-BERT model fine-tuned on Natural Language Inference for Odia.
-- [SampurNER Odia IndicBERTv2](https://huggingface.co/prachuryyaIITG/SampurNER_Odia_IndicBERTv2) : Named Entity Recognition model for Odia built on IndicBERTv2 (MIT license).
 
 #### Word Embedding
 - [FastText (CommonCrawl + Wikipedia)](https://fasttext.cc/docs/en/crawl-vectors.html) : Pretrained Word vector (CommonCrawl + Wikipedia). Trained on Common Crawl and Wikipedia using fastText. Select the language "oriya" from the model list.
 - [FastText (Wikipedia)](https://fasttext.cc/docs/en/pretrained-vectors.html) : Pretrained Word vector (Wikipedia). Trained on Wikipedia using fastText. Select the language "oriya" from the model list.
 - IndicFT: Word embeddings for 11 Indian languages trained on IndicCorp. The embeddings are based on the fastText model and are well suited for the morphologically rich nature of Indic languages. [[paper](https://indicnlp.ai4bharat.org/papers/arxiv2020_indicnlp_corpus.pdf)][[code]()][[web](https://web.archive.org/web/20240304135630/https://ai4bharat.iitm.ac.in/indicft/)]
+- [odia-sentence-similarity-sbert](https://huggingface.co/l3cube-pune/odia-sentence-similarity-sbert) : Sentence-BERT model for Odia semantic similarity and sentence embedding.
+- [odia-sentence-bert-nli](https://huggingface.co/l3cube-pune/odia-sentence-bert-nli) : Sentence-BERT model fine-tuned on Natural Language Inference for Odia sentence embeddings.
 
   
 #### Morphanalyzers
@@ -102,13 +101,13 @@ Curated list of all AI related resources in Odia Language.
 ### Foundation LLM
 - [Qwen 1.5 Odia 7B](https://huggingface.co/OdiaGenAI-LLM/qwen_1.5_odia_7b): This is a pre-trained Odia large language model with 7 billion parameters, and it is based on Qwen 1.5-7B. The model is pre-trained on the Culturex-Odia dataset, a filtered version of the original CulturaX dataset for Odia text. As per the authors, it is a model is a base model and not meant to be used as is. It is recommended to first finetune it on downstream tasks. [Blog](https://www.odiagenai.org/blog/introducing-odiagenai-s-qwen-based-pre-trained-llm-for-odia-language)
 - [Odia-Gemma-2B-Base](https://huggingface.co/OdiaGenAI-LLM/odia-gemma-2b-base) : Pre-trained 2B-parameter decoder-only Odia LLM (Gemma 2B based).
+- [falcon-base-1b-odia-pt](https://huggingface.co/sam2ai/falcon-base-1b-odia-pt) : A 1B-parameter Falcon base model pretrained on Odia text (Apache-2.0).
 
 ### Fine-Tuned LLM
 - [Odia llama2 7B base](https://huggingface.co/OdiaGenAI/odia_llama2_7B_base): odia_llama2_7B_base is based on Llama2-7b and finetuned with 180k Odia instruction set. [Paper](https://arxiv.org/pdf/2312.12624.pdf)
 - [Llama3_8B_Odia_Unsloth & Llama 3.x R1 Scalable Series](https://huggingface.co/OdiaGenAI-LLM/Llama3_8B_Odia_Unsloth): Advanced Llama-3 based generative models optimized using the Unsloth library with 4-bit bnb quantization.
 - [odia-t5-base](https://huggingface.co/mrSoul7766/odia-t5-base) : Multilingual Text-to-Text Transformer (mT5-based) fine-tuned for Odia translation, summarization, and QA.
 - [llama_8b_alpaca_4bit](https://huggingface.co/OdiaGenAI-LLM/llama_8b_alpaca_4bit) : 8B Llama model with 4-bit Alpaca-style fine-tuning for Odia text generation.
-- [falcon-base-1b-odia-pt](https://huggingface.co/sam2ai/falcon-base-1b-odia-pt) : A 1B-parameter Falcon base model pretrained on Odia text (Apache-2.0).
 - [odia-gemma4-e2b-gguf](https://huggingface.co/kaushikdash/odia-gemma4-e2b-gguf) : Gemma 4 GGUF quantized model for Odia (437+ downloads).
 - [Llama-3.2-3B-Instruct-Odia-GGUF](https://huggingface.co/mradermacher/Llama-3.2-3B-Instruct-Odia-GGUF) : Llama 3.2 3B instruct model in GGUF format for Odia (Apache-2.0).
 - [qwen35_0.8b_odia_gguf](https://huggingface.co/TinyOlive/qwen35_0.8b_odia_gguf) : Qwen 3.5 0.8B lightweight GGUF model for Odia.
@@ -164,6 +163,7 @@ Curated list of all AI related resources in Odia Language.
 * [MTEB: OdiaNewsClassification](https://huggingface.co/datasets/mteb/OdiaNewsClassification) : A heavily curated 3-class classification testbed comprising over 17,200 journalistic articles. Officially integrated into the MTEB standard.
 * [Odia Sentiment MuRIL v4](https://huggingface.co/Baps24/odia-sentiment-muril-v4) : An advanced sentiment classifier built natively upon the MuRIL framework.
 * [Odia Sentiment Dataset](https://huggingface.co/datasets/Baps24/odia-sentiment-dataset) : Curated Odia sentiment analysis dataset for training and evaluation.
+* [SampurNER Odia IndicBERTv2](https://huggingface.co/prachuryyaIITG/SampurNER_Odia_IndicBERTv2) : Named Entity Recognition model for Odia built on IndicBERTv2 (MIT license).
 
 ### NLP Libraries / Tools 
 * [Indic NLP Library](https://github.com/anoopkunchukuttan/indic_nlp_library) : It is a python based NLP library for Indian language text processing including Odia.
