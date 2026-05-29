@@ -92,6 +92,7 @@ Curated list of all AI related resources in Odia Language.
 * [OdiEnCorp translation instructions 25k](https://huggingface.co/datasets/OdiaGenAI/OdiEnCorp_translation_instructions_25k): This dataset contains 25k English-to-Odia translation instruction set.
 * [Odia Reasoning Datasets (GU, OD, OpenThoughts)](https://huggingface.co/datasets/OdiaGenAIdata/Reasoning_OD): A suite of newly compiled, highly validated datasets designed to transition LLMs from basic conversational generation to step-by-step logical reasoning.
 * [Odia Gemma 4 Style Polish Mix](https://huggingface.co/datasets/kaushikdash/odia-gemma4-style-polish-mix) : Style transfer and polish instruction dataset for refining Odia LLM outputs.
+* [Odia Instruction Following Dataset](https://huggingface.co/datasets/abhilash88/odia-instruction-dataset) : Large instruction dataset spanning 100K–1M samples for Odia instruction tuning (CC-BY-4.0).
 
 #### Pe-train Dataset
 
@@ -145,6 +146,7 @@ Curated list of all AI related resources in Odia Language.
 * [Large Odia LLM Pre-training Corpus (pre_train_odia_data_processed)](https://huggingface.co/datasets/OdiaGenAIdata/pre_train_odia_data_processed): A uniformly processed, aggressively deduplicated amalgamation of massive Odia text data of 6.4GB.
 * [IndicDialogue (Odia Subtitles)](https://data.mendeley.com/datasets/wcb4bxbyxx) : Large subtitle and dialogue corpus from OpenSubtitles in 10 Indic languages including Odia, with 6.8M+ Odia dialogues.
 * [Odia-data-collection](https://huggingface.co/datasets/Minutor/Odia-data-collection) : Aggregated Odia text dataset on Hugging Face created for language training.
+* [odia-text-dataset](https://huggingface.co/datasets/hemendra7011/odia-text-dataset) : Large curated Odia text dataset for language modeling (513+ downloads, Apache-2.0).
 
 #### Lexical Resources
 * [IndoWordNet](http://www.cfilt.iitb.ac.in/indowordnet/) : Wordnet for Indian languages including Odia.
@@ -164,6 +166,7 @@ Curated list of all AI related resources in Odia Language.
 * [Odia Sentiment MuRIL v4](https://huggingface.co/Baps24/odia-sentiment-muril-v4) : An advanced sentiment classifier built natively upon the MuRIL framework.
 * [Odia Sentiment Dataset](https://huggingface.co/datasets/Baps24/odia-sentiment-dataset) : Curated Odia sentiment analysis dataset for training and evaluation.
 * [SampurNER Odia IndicBERTv2](https://huggingface.co/prachuryyaIITG/SampurNER_Odia_IndicBERTv2) : Named Entity Recognition model for Odia built on IndicBERTv2 (MIT license).
+* [odia_news_classification](https://huggingface.co/datasets/mlexplorer008/odia_news_classification) : Odia news classification dataset with labeled categories (136+ downloads, MIT license).
 
 ### NLP Libraries / Tools 
 * [Indic NLP Library](https://github.com/anoopkunchukuttan/indic_nlp_library) : It is a python based NLP library for Indian language text processing including Odia.
@@ -201,6 +204,8 @@ Curated list of all AI related resources in Odia Language.
 - [Odia General Conversation Speech Dataset](https://www.futurebeeai.com/dataset/speech-dataset/general-conversation-oriya-odia-india) : Real-world, unscripted conversational Odia speech with detailed metadata.
 - [Odia Speech Datasets Collection](https://www.futurebeeai.com/dataset/speech-data/odia-dataset) : Commercial suite of Odia speech datasets for ASR, TTS, and voice-assistant training.
 - [OdiaGenAI-Speech OpenSLR training data](https://huggingface.co/datasets/OdiaGenAI-Speech/train-data-openslr) : OpenSLR-based Odia speech training dataset (163+ downloads).
+- [IndicTTS Odia Speech Data](https://huggingface.co/datasets/SPRINGLab/IndicTTS_Odia) : SPRINGLab IndicTTS corpus with Odia speech data for TTS training (127+ downloads).
+- [odia_data_v1](https://huggingface.co/datasets/cdactvm/odia_data_v1) : Curated Odia speech dataset with 53K+ transcribed audio samples (230+ downloads).
   
 ## Computer Vision
 
