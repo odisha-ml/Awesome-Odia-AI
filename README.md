@@ -103,6 +103,9 @@ Curated list of all AI related resources in Odia Language.
 - [Qwen 1.5 Odia 7B](https://huggingface.co/OdiaGenAI-LLM/qwen_1.5_odia_7b): This is a pre-trained Odia large language model with 7 billion parameters, and it is based on Qwen 1.5-7B. The model is pre-trained on the Culturex-Odia dataset, a filtered version of the original CulturaX dataset for Odia text. As per the authors, it is a model is a base model and not meant to be used as is. It is recommended to first finetune it on downstream tasks. [Blog](https://www.odiagenai.org/blog/introducing-odiagenai-s-qwen-based-pre-trained-llm-for-odia-language)
 - [Odia-Gemma-2B-Base](https://huggingface.co/OdiaGenAI-LLM/odia-gemma-2b-base) : Pre-trained 2B-parameter decoder-only Odia LLM (Gemma 2B based).
 - [falcon-base-1b-odia-pt](https://huggingface.co/sam2ai/falcon-base-1b-odia-pt) : A 1B-parameter Falcon base model pretrained on Odia text (Apache-2.0).
+- [Odia-Gemma-7B-Base-Unsloth](https://huggingface.co/OdiaGenAI-LLM/odia-gemma-7b-base-unsloth) : Pre-trained 7B-parameter Odia LLM based on Google Gemma, optimized with Unsloth.
+- [bloomz-1b-odia](https://huggingface.co/sam2ai/bloomz-1b-odia) : BloomZ 1B model pretrained on Odia text.
+- [open_llama_3b_odia_q4-0_gguf](https://huggingface.co/sam2ai/open_llama_3b_odia_q4-0_gguf) : OpenLLaMA 3B Odia model in GGUF Q4_0 quantized format.
 
 ### Fine-Tuned LLM
 - [Odia llama2 7B base](https://huggingface.co/OdiaGenAI/odia_llama2_7B_base): odia_llama2_7B_base is based on Llama2-7b and finetuned with 180k Odia instruction set. [Paper](https://arxiv.org/pdf/2312.12624.pdf)
@@ -147,6 +150,7 @@ Curated list of all AI related resources in Odia Language.
 * [IndicDialogue (Odia Subtitles)](https://data.mendeley.com/datasets/wcb4bxbyxx) : Large subtitle and dialogue corpus from OpenSubtitles in 10 Indic languages including Odia, with 6.8M+ Odia dialogues.
 * [Odia-data-collection](https://huggingface.co/datasets/Minutor/Odia-data-collection) : Aggregated Odia text dataset on Hugging Face created for language training.
 * [odia-text-dataset](https://huggingface.co/datasets/hemendra7011/odia-text-dataset) : Large curated Odia text dataset for language modeling (513+ downloads, Apache-2.0).
+* [BertOdia_small](https://huggingface.co/datasets/shantipriya/BertOdia_small) : Odia text dataset curated for BERT-style masked language model pretraining (118+ downloads).
 
 #### Lexical Resources
 * [IndoWordNet](http://www.cfilt.iitb.ac.in/indowordnet/) : Wordnet for Indian languages including Odia.
@@ -229,6 +233,7 @@ Curated list of all AI related resources in Odia Language.
 * [Odia Visual Genome (OVG)](http://hdl.handle.net/11234/1-5979) : Multimodal English-Odia dataset of Visual Genome image-caption pairs.
 * [Odia Image Captioning Dataset](https://www.futurebeeai.com/dataset/multi-modal-dataset/odia-image-caption-dataset) : FutureBeeAI multimodal dataset of diverse images with Odia captions and rich metadata.
 * [odia-llava-dataset](https://huggingface.co/datasets/sam2ai/odia-llava-dataset) : Hugging Face dataset of Odia instruction-style image-text pairs suitable for training LLaVA-style multimodal Odia models.
+* [paligemma_odia_3b_v1.0](https://huggingface.co/sam2ai/paligemma_odia_3b_v1.0) : PaliGemma 3B vision-language model fine-tuned for Odia image understanding and captioning.
 
 ## Applications
 - [Odia Lingua Chatbot](https://github.com/HimanshuMohanty-Git24/Odia_Lingua) : AI-powered Odia language chatbot built with Groq API, Odia TTS (MMS-TTS-ory), and Google Search integration.
