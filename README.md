@@ -51,7 +51,7 @@ Curated list of all AI related resources in Odia Language.
   
 ### Transliteration
 
-- IndicXlit: [[paper](https://arxiv.org/abs/2205.03018)][[web](https://ai4bharat.iitm.ac.in/areas/xlit")][[code](https://github.com/AI4Bharat/IndicTrans2) ][[Demo](https://xlit.ai4bharat.org/)][[PyPi](https://pypi.org/project/ai4bharat-transliteration)]
+- IndicXlit: [[paper](https://arxiv.org/abs/2205.03018)][[web](https://ai4bharat.iitm.ac.in/areas/xlit)][[code](https://github.com/AI4Bharat/IndicTrans2) ][[Demo](https://xlit.ai4bharat.org/)][[PyPi](https://pypi.org/project/ai4bharat-transliteration)]
 - [open-source unicode converter](https://github.com/OdiaWikimedia/Converter) to transliterate between various languages to Odia language [Demo](https://or.wikipedia.org/s/1hv1).
 
 ### Language Understanding
@@ -66,7 +66,7 @@ Curated list of all AI related resources in Odia Language.
 - [Language Model](https://github.com/goru001/nlp-for-odia) : Pretrained Odia Language Model. 
 - [BertOdia](https://colab.research.google.com/gist/satyapb2002/aeb7bf9a686a9c7294ec5725ff53fa49/odiabert_languagemodel.ipynb#scrollTo=xy_H5EjNTdRE) : Bert-based Odia Language Model.
 - IndicBERT: Multilingual, compact ALBERT language model trained on IndicCorp covering 11 major Indian and English. Small model (18 million parameters) that is competitive with large LMs for Indian language tasks. [[paper](https://aclanthology.org/2020.findings-emnlp.445/)][[code](https://github.com/AI4Bharat/Indic-BERT-v1)][[web](https://ai4bharat.iitm.ac.in/areas/model/LLM/IndicBERT)]
-- IndicNER: Named Entity Recognizer models for multiple Indian languages. The models are trained on the Naampadam NER dataset mined from Samanantar parallel corpora. [[paper](https://arxiv.org/abs/2212.10168)][[huggingface](https://huggingface.co/ai4bharat/IndicNER)][[web](https://ai4bharat.iitm.ac.in/language-understanding)]
+- IndicNER: Named Entity Recognizer models for multiple Indian languages. The models are trained on the Naampadam NER dataset mined from Samanantar parallel corpora. [[paper](https://arxiv.org/abs/2212.10168)][[huggingface](https://huggingface.co/ai4bharat/IndicNER)][[web](https://web.archive.org/web/20230930123927/https://ai4bharat.iitm.ac.in/language-understanding/)]
 - IndicBERTv2: Language model trained on IndicCorp v2 with competitive performance on IndicXTREME [[paper](https://arxiv.org/abs/2212.05409)][[code](https://github.com/AI4Bharat/IndicBERT)][[web](https://ai4bharat.iitm.ac.in/areas/model/LLM/IndicBERTv2)]
 - Oriya-BERT-SQuAD: A highly capable 0.2B parameter OdiaBERT model rigorously fine-tuned directly on the IndicSQuAD dataset. [[model](https://huggingface.co/l3cube-pune/oriya-question-answering-squad-bert)]
 - [odia-bert](https://huggingface.co/l3cube-pune/odia-bert) : A fill-mask BERT model (753+ downloads) specifically pretrained for Odia language understanding tasks.
@@ -199,7 +199,7 @@ Curated list of all AI related resources in Odia Language.
 
 
 ### Speech Dataset
-* [IIT Madras IndicTTS](https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia. The database contains spoken sentences/utterances recorded by both Male and Female native speakers.
+* [IIT Madras IndicTTS](https://web.archive.org/web/20260519082015/https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia.
 * [LDC-IL](https://data.ldcil.org/speech/speech-raw-corpus/odia-raw-speech-corpuss) :  It includes Odia annotated speech corpora which has voices of 450 different native speakers.
 - [Mozilla Common Voice](https://mozilladatacollective.com/datasets/cmn2cww3s01dfo107etbjbif1) : The Mozilla Common Voice project is a community-led project to build a large multilingual dataset for speech recognition.
 - [Odia text to speech dataset](https://commons.wikimedia.org/wiki/Category:Odia_pronunciation) : 55000 odia words pronunced in various dialets of Odisha like Baleswari, Puri, Cuttack, etc.
