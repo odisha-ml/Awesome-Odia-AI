@@ -153,6 +153,7 @@ Curated list of all AI related resources in Odia Language.
 * [Indic NLP Library](https://github.com/anoopkunchukuttan/indic_nlp_library) : It is a python based NLP library for Indian language text processing including Odia.
 * [Odia Romanization Script](https://github.com/shantipriyap/odia_nlp) : The perl script "odiaroman" maps the Devnagri (Odia) to Latin.
 - [OpenOdia : Tools for Odia language](https://github.com/soumendrak/openodia)
+- [BrahmicTokenizer-131K](https://github.com/theschoolofai/BrahmicTokenizer-131K): A 131K-vocabulary multilingual tokenizer optimized for Brahmic scripts including Odia, outperforming standard tokenizers in token fertility and efficiency. [[paper](https://arxiv.org/abs/2605.29379)][[model](https://huggingface.co/theschoolofai/BrahmicTokenizer-131K)]
 
 ### Other NLP Resources
 * [TDIL](http://tdil-dc.in/index.php?lang=en) : It contains language application, resources, and tools for Indian languages including Odia. It contains many language applications, resources, and tools for Odia such as Odia terminology application, Odia language search engine, wordnet, English-Odia parallel text corpus, English-Odia machine-assisted translation, text-to-speech software, and many more.  
