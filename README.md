@@ -48,6 +48,8 @@ Curated list of all AI related resources in Odia Language.
 - IndicTrans2: [[paper](https://arxiv.org/abs/2305.16307)][[web](https://ai4bharat.iitm.ac.in/areas/model/NMT/IndicTrans2)][[code](https://github.com/AI4Bharat/IndicTrans2)]
 - WAT 2025 NLLB-200 Fine-tuned Model: A highly optimized 3.3B parameter neural machine translation model scored on WAT 2025. [[model](https://huggingface.co/OdiaGenAI/facebook-nllb-200-3.3B-finetuned-odia)]
 - NLTM-EILMT Bhashini Translation API System: The sovereign, Bhashini-backed open-source repository providing robust, production-ready bi-directional API/REST endpoints for English to Odia machine translation. [[code](https://github.com/eilmt/NLTM-EILMT)]
+- [mo-odia-translator](https://huggingface.co/rohanbose/mo-odia-translator) : English↔Odia translation model based on mT5 (300M params, Apache-2.0).
+- [qwen3-eng-odia-translation](https://huggingface.co/raghu298/qwen3-eng-odia-translation) : Qwen3-based English-to-Odia translation model fine-tuned for conversational translation (752M params).
   
 ### Transliteration
 
@@ -115,6 +117,7 @@ Curated list of all AI related resources in Odia Language.
 - [odia-gemma4-e2b-gguf](https://huggingface.co/kaushikdash/odia-gemma4-e2b-gguf) : Gemma 4 GGUF quantized model for Odia (437+ downloads).
 - [Llama-3.2-3B-Instruct-Odia-GGUF](https://huggingface.co/mradermacher/Llama-3.2-3B-Instruct-Odia-GGUF) : Llama 3.2 3B instruct model in GGUF format for Odia (Apache-2.0).
 - [qwen35_0.8b_odia_gguf](https://huggingface.co/TinyOlive/qwen35_0.8b_odia_gguf) : Qwen 3.5 0.8B lightweight GGUF model for Odia.
+- [dhee-nxtgen-qwen3-odia-v2](https://huggingface.co/dheeyantra/dhee-nxtgen-qwen3-odia-v2) : Qwen3-based Odia instruction-tuned model for conversational AI (Apache-2.0).
 
 
 ### Benchmarking Set
@@ -124,6 +127,7 @@ Curated list of all AI related resources in Odia Language.
 * [Odia-ARC](https://huggingface.co/datasets/tripathysagar/odia-arc) : Translated ARC (AI2 Reasoning Challenge) benchmark for Odia (197+ downloads).
 * [Odia-GSM8K](https://huggingface.co/datasets/tripathysagar/odia-gsm8k) : Translated GSM8K math reasoning benchmark for Odia (153+ downloads).
 * [Odia-TruthfulQA](https://huggingface.co/datasets/tripathysagar/odia-truthfulqa) : Translated TruthfulQA benchmark for Odia (122+ downloads).
+* [Odia-TruthfulQA-MC](https://huggingface.co/datasets/tripathysagar/odia-truthfulqa-mc) : Multiple-choice variant of Odia TruthfulQA for MCQ-style evaluation (79+ downloads).
 * [Odia-HellaSwag](https://huggingface.co/datasets/tripathysagar/odia-hellaswag) : Translated HellaSwag commonsense reasoning benchmark for Odia (148+ downloads).
 * [Odia-Winogrande](https://huggingface.co/datasets/tripathysagar/odia-winogrande) : Translated Winogrande coreference resolution benchmark for Odia (146+ downloads).
 
@@ -192,6 +196,7 @@ Curated list of all AI related resources in Odia Language.
 - [odia_large_wav2vec2](https://huggingface.co/Harveenchadha/odia_large_wav2vec2) : Large Wav2Vec2 model for Odia ASR (33+ downloads, Apache-2.0).
 - [whisper-odia-medium](https://huggingface.co/DevOG/whisper-odia-medium) : Whisper medium model for Odia speech recognition.
 - [whisper-small-odia](https://huggingface.co/wisnu007/whisper-small-odia) : Whisper small model fine-tuned for Odia ASR.
+- [Vaani-FastConformer-Odia](https://huggingface.co/ARTPARK-IISc/Vaani-FastConformer-Odia) : NVIDIA FastConformer model trained on Vaani project Odia speech data for high-performance ASR (Apache-2.0, arXiv:2603.28714).
 
 ### Text-to-Speech
 - Indic-TTS [[Paper](https://arxiv.org/abs/2211.09536)][[Code](https://github.com/AI4Bharat/Indic-TTS)] [[Try It Live](https://models.ai4bharat.org/#/tts)]][[Video](https://youtu.be/I3eo8IUAP7s)]
@@ -222,6 +227,7 @@ Curated list of all AI related resources in Odia Language.
 * [odia-ocr-qwen-finetuned](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned) : Production-ready Qwen2.5-VL-3B-Instruct VLM fine-tuned on 58,720 Odia text-image pairs for robust OCR.
 * [odia-ocr-qwen-finetuned_v2](https://huggingface.co/shantipriya/odia-ocr-qwen-finetuned_v2) : Updated Odia OCR Qwen model trained on ~73k word-level Odia crops spanning diverse fonts and print qualities.
 * [odia-ocr-qwen-finetuned_v3](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned_v3) : Third-generation Odia OCR model with improved accuracy across diverse scripts and degradations.
+* [odia-ocr-qwen-finetuned_v3-merged](https://huggingface.co/shantipriya/odia-ocr-qwen-finetuned_v3-merged) : Merged checkpoint of Odia OCR v3 fine-tunes for consolidated robustness (28+ downloads).
 * [odia-ocr-qwen-finetuned-merged](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned-merged) : Merged version of Odia OCR Qwen model combining multiple fine-tune checkpoints for enhanced robustness.
 * [odia-ocr-synth](https://huggingface.co/datasets/Pritosh/odia-ocr-synth) : Large-scale synthetic Odia OCR dataset with printed text samples (653+ downloads, MIT license).
 * [odia-ocr-synth-v2](https://huggingface.co/datasets/Pritosh/odia-ocr-synth-v2) : Extended synthetic Odia OCR dataset (118+ downloads, MIT license).
