@@ -215,6 +215,7 @@ Curated list of all AI related resources in Odia Language.
 - [OdiaGenAI-Speech OpenSLR training data](https://huggingface.co/datasets/OdiaGenAI-Speech/train-data-openslr) : OpenSLR-based Odia speech training dataset (163+ downloads).
 - [IndicTTS Odia Speech Data](https://huggingface.co/datasets/SPRINGLab/IndicTTS_Odia) : SPRINGLab IndicTTS corpus with Odia speech data for TTS training (127+ downloads).
 - [odia_data_v1](https://huggingface.co/datasets/cdactvm/odia_data_v1) : Curated Odia speech dataset with 53K+ transcribed audio samples (230+ downloads).
+- [Voice of India](https://arxiv.org/abs/2604.19151) : A closed-source benchmark for real-world speech recognition evaluation across 15 Indian languages including Odia — 536 hours of telephonic speech from 36,691 speakers across 139 regional clusters.
   
 ## Computer Vision
 
