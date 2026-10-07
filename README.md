@@ -130,6 +130,7 @@ Curated list of all AI related resources in Odia Language.
 * [Odia-TruthfulQA-MC](https://huggingface.co/datasets/tripathysagar/odia-truthfulqa-mc) : Multiple-choice variant of Odia TruthfulQA for MCQ-style evaluation (79+ downloads).
 * [Odia-HellaSwag](https://huggingface.co/datasets/tripathysagar/odia-hellaswag) : Translated HellaSwag commonsense reasoning benchmark for Odia (148+ downloads).
 * [Odia-Winogrande](https://huggingface.co/datasets/tripathysagar/odia-winogrande) : Translated Winogrande coreference resolution benchmark for Odia (146+ downloads).
+* [Indic-KCC Agri-Advisory Benchmark](https://github.com/sthanika-ai/Indic-KCC-Agri-Advisory-Benchmark): Open-ended agricultural-advisory QA benchmark with 500 real Kisan Call Centre questions translated from English into Odia and 10 other Indian languages. Responses are scored by an LLM judge against the call-centre agent reply. The dataset is [gated on Hugging Face](https://huggingface.co/datasets/sthanika-ai/Indic-KCC-Agri-Advisory-Benchmark) (access must be requested); see the [research report](https://sthanika.ai/research/indic-agri-advisory-2026). The Odia questions are translations, not natively authored.
 
 ### Text Dataset
 
