@@ -131,6 +131,9 @@ Curated list of all AI related resources in Odia Language.
 * [Odia-HellaSwag](https://huggingface.co/datasets/tripathysagar/odia-hellaswag) : Translated HellaSwag commonsense reasoning benchmark for Odia (148+ downloads).
 * [Odia-Winogrande](https://huggingface.co/datasets/tripathysagar/odia-winogrande) : Translated Winogrande coreference resolution benchmark for Odia (146+ downloads).
 * [Indic-KCC Agri-Advisory Benchmark](https://github.com/sthanika-ai/Indic-KCC-Agri-Advisory-Benchmark): Open-ended agricultural-advisory QA benchmark with 500 real Kisan Call Centre questions translated from English into Odia and 10 other Indian languages. Responses are scored by an LLM judge against the call-centre agent reply. The dataset is [gated on Hugging Face](https://huggingface.co/datasets/sthanika-ai/Indic-KCC-Agri-Advisory-Benchmark) (access must be requested); see the [research report](https://sthanika.ai/research/indic-agri-advisory-2026). The Odia questions are translations, not natively authored.
+* [Odia Eval Benchmark](https://huggingface.co/datasets/saidutta69/odia-eval-benchmark) : Unified Odia evaluation set of 125,243 samples from 33 datasets across 9 tasks (MIT).
+* [IndicParam](https://huggingface.co/datasets/bharatgenai/IndicParam) : Human-curated multiple-choice benchmark of 13,207 questions in 11 low-resource Indic languages, including Odia (CC-BY-NC-4.0). [[paper](https://arxiv.org/abs/2512.00333)]
+* IndicIFEval: Verifiable instruction-following benchmark for 14 Indic languages, including Odia. [[paper](https://arxiv.org/abs/2602.22125)][[code](https://github.com/AI4Bharat/IndicIFEval)]
 
 ### Text Dataset
 
@@ -156,6 +159,7 @@ Curated list of all AI related resources in Odia Language.
 * [Odia-data-collection](https://huggingface.co/datasets/Minutor/Odia-data-collection) : Aggregated Odia text dataset on Hugging Face created for language training.
 * [odia-text-dataset](https://huggingface.co/datasets/hemendra7011/odia-text-dataset) : Large curated Odia text dataset for language modeling (513+ downloads, Apache-2.0).
 * [BertOdia_small](https://huggingface.co/datasets/shantipriya/BertOdia_small) : Odia text dataset curated for BERT-style masked language model pretraining (118+ downloads).
+* [Odia Web Corpus v2](https://huggingface.co/datasets/saidutta69/Odia-Web-Corpus-v2) : Multi-source Odia corpus of 2.17M records (~601M estimated tokens) for LLM continual pretraining (CC-BY-4.0).
 
 #### Lexical Resources
 * [IndoWordNet](http://www.cfilt.iitb.ac.in/indowordnet/) : Wordnet for Indian languages including Odia.
@@ -198,10 +202,16 @@ Curated list of all AI related resources in Odia Language.
 - [whisper-odia-medium](https://huggingface.co/DevOG/whisper-odia-medium) : Whisper medium model for Odia speech recognition.
 - [whisper-small-odia](https://huggingface.co/wisnu007/whisper-small-odia) : Whisper small model fine-tuned for Odia ASR.
 - [Vaani-FastConformer-Odia](https://huggingface.co/ARTPARK-IISc/Vaani-FastConformer-Odia) : NVIDIA FastConformer model trained on Vaani project Odia speech data for high-performance ASR (Apache-2.0, arXiv:2603.28714).
+- [odia-asr](https://huggingface.co/shantipriya/odia-asr) : ai4bharat/indic-conformer-600m-multilingual fine-tuned on MUCS 2021 Odia speech (OpenSLR-103).
+- [SraVaani-1.0](https://huggingface.co/ARTPARK-IISc/SraVaani-1.0) : Multilingual ASR model from ARTPARK-IISc trained on Vaani data, covering Odia and 13 other languages (MIT, gated).
 
 ### Text-to-Speech
 - Indic-TTS [[Paper](https://arxiv.org/abs/2211.09536)][[Code](https://github.com/AI4Bharat/Indic-TTS)] [[Try It Live](https://models.ai4bharat.org/#/tts)]][[Video](https://youtu.be/I3eo8IUAP7s)]
 - [omni-odia-tts](https://huggingface.co/OliveVoice/omni-odia-tts) : Omni TTS model for Odia speech synthesis.
+- [mms-tts-ory](https://huggingface.co/facebook/mms-tts-ory) : Meta Massively Multilingual Speech (MMS) VITS text-to-speech checkpoint for Odia (CC-BY-NC-4.0).
+- [indic-parler-tts](https://huggingface.co/ai4bharat/indic-parler-tts) : AI4Bharat 0.9B multilingual text-to-speech model supporting Odia (Apache-2.0, gated).
+- [SPRING_F5](https://huggingface.co/SPRINGLab/SPRING_F5) : F5-TTS fine-tuned for 23 Indian languages and English, including Odia (Apache-2.0).
+- [Sooktam-2](https://huggingface.co/bharatgenai/sooktam2) : BharatGen multilingual F5-TTS-based text-to-speech model covering 12 languages, including Odia.
 
 
 ### Speech Dataset
@@ -236,6 +246,7 @@ Curated list of all AI related resources in Odia Language.
 * [odia-ocr-qwen35-qlora-v5](https://huggingface.co/Pritosh/odia-ocr-qwen35-qlora-v5) : Qwen 3.5-based Odia OCR model fine-tuned with QLoRA (Apache-2.0).
 * [odia-ocr-grpo-v2](https://huggingface.co/Pritosh/odia-ocr-grpo-v2) : Odia OCR model optimized using GRPO reinforcement learning (Apache-2.0).
 * [odia_ocr_benchmark_data](https://huggingface.co/datasets/OdiaGenAIOCR/odia_ocr_benchmark_data) : Standardized Odia OCR evaluation benchmark dataset (CC-BY-4.0).
+* [OdiaGenAIOCR synthetic_data](https://huggingface.co/datasets/OdiaGenAIOCR/synthetic_data) : Synthetic Odia text images paired with Unicode transcriptions for OCR training (CC-BY-NC-SA-4.0, gated).
 
 ### Multimodal
 * [Odia Visual Genome (OVG)](http://hdl.handle.net/11234/1-5979) : Multimodal English-Odia dataset of Visual Genome image-caption pairs.
