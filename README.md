@@ -196,7 +196,7 @@ Curated list of all AI related resources in Odia Language.
 - [BrahmicTokenizer-131K](https://github.com/theschoolofai/BrahmicTokenizer-131K): A 131K-vocabulary multilingual tokenizer optimized for Brahmic scripts including Odia, outperforming standard tokenizers in token fertility and efficiency. [[paper](https://arxiv.org/abs/2605.29379)][[model](https://huggingface.co/theschoolofai/BrahmicTokenizer-131K)]
 
 ### Other NLP Resources
-- [TDIL](http://tdil-dc.in/index.php?lang=en) : It contains language application, resources, and tools for Indian languages including Odia. It contains many language applications, resources, and tools for Odia such as Odia terminology application, Odia language search engine, wordnet, English-Odia parallel text corpus, English-Odia machine-assisted translation, text-to-speech software, and many more.  
+- [TDIL](https://tdil-dc.in/index.php?lang=en) : It contains language application, resources, and tools for Indian languages including Odia. It contains many language applications, resources, and tools for Odia such as Odia terminology application, Odia language search engine, wordnet, English-Odia parallel text corpus, English-Odia machine-assisted translation, text-to-speech software, and many more.  
 - Efficiency Measured in English: Tokeniser-coverage study across eleven Indic scripts. TinyLlama's vocabulary has 0% of Odia's codepoints, so 93.6% of the tokens it emits on Odia are raw bytes, while mBERT discards 87.9% of Odia text as UNK. [[paper](https://arxiv.org/abs/2610.24818)]
 
 ## Audio
@@ -223,7 +223,7 @@ Curated list of all AI related resources in Odia Language.
 
 
 ### Speech Dataset
-- [IIT Madras IndicTTS](http://web.archive.org/web/20211031184427/https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia.
+- [IIT Madras IndicTTS](https://web.archive.org/web/20211031184427/https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia.
 - [LDC-IL](https://data.ldcil.org/speech/speech-raw-corpus/odia-raw-speech-corpuss) :  It includes Odia annotated speech corpora which has voices of 450 different native speakers.
 - [Mozilla Common Voice](https://mozilladatacollective.com/datasets/cmn2cww3s01dfo107etbjbif1) : The Mozilla Common Voice project is a community-led project to build a large multilingual dataset for speech recognition.
 - [Odia text to speech dataset](https://commons.wikimedia.org/wiki/Category:Odia_pronunciation) : 55000 odia words pronunced in various dialets of Odisha like Baleswari, Puri, Cuttack, etc.
@@ -274,7 +274,7 @@ Curated list of all AI related resources in Odia Language.
 - [Odia Generative AI](https://www.odiagenai.org/)
 
 ### Policy & Ecosystem
-- [Odisha AI Policy 2025 & Taskforce](https://dowr.odisha.gov.in/sites/default/files/2025-07/Odisha%20AI%20Policy-2025.pdf)
+- [Odisha AI Policy 2025 & Taskforce](https://egazette.odisha.gov.in/Archival_ControllerEW/download_gazette/5343)
 - [National IndiaAI Mission](https://indiaai.gov.in/)
 
 ## Contributing
