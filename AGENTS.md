@@ -7,10 +7,11 @@
 | Path | What it is |
 | --- | --- |
 | `README.md` | The list. |
-| `scripts/check.sh` | The one check command. It runs the two checks below. |
-| `scripts/check_list.py` | Offline check of the entry format, duplicates and the table of contents. |
+| `scripts/check.sh` | `scripts/check.sh` runs the list check, the gate for every PR. `scripts/check.sh links` runs the link check. |
+| `scripts/check_list.py` | The list check. It runs offline and checks the entry format, duplicates and the table of contents. |
+| `.markdown-link-check.json` | Settings for the link check. |
 | `.agents/skills/check-awesome-odia-ai/` | How to run the checks, read their output and prove they work. |
-| `.github/workflows/deadlink_checker.yml` | Runs `scripts/check.sh` on pushes to `main`, on pull requests and daily. |
+| `.github/workflows/deadlink_checker.yml` | Runs both checks on pushes to `main`, on pull requests, daily and on manual dispatch. |
 
 ## Entry format
 
@@ -29,7 +30,7 @@ The name links to the resource itself. The description says what it is, how much
 | An entry name appears once in the whole list, ignoring case. A resource that fits two sections goes in the main one, and the description names the other part (see OdiEnCorp 1.0). | `check_list.py` |
 | The table of contents lists every `##` to `####` heading in order. On a mismatch the check prints the expected block to paste in. | `check_list.py` |
 | Headings have no trailing spaces, so their anchors resolve. | `check_list.py` |
-| Every link answers with a 2xx status. | `markdown-link-check` |
+| Every link answers 200, 206 or 429. | `scripts/check.sh links` |
 
 ## Inclusion rules
 
@@ -48,13 +49,26 @@ Top-level sections stay in this order: NLP, Audio, Computer Vision, Applications
 
 ```bash
 scripts/check.sh
+scripts/check.sh links
 ```
 
-It needs `python3` and Node 20 or newer for `npx`. It prints `LIST OK: <n> entries`, then `LINKS OK`. Without network, run `python3 scripts/check_list.py`. The skill in `.agents/skills/check-awesome-odia-ai/` explains each failure.
+`scripts/check.sh` needs only `python3` and prints `LIST OK: <n> entries`. CI's `list` job runs it and fails the run when it fails.
+
+`scripts/check.sh links` needs Node 22 or newer for `npx` and network access, and prints `LINKS OK`. CI's `links` job runs it, but a failure there does not fail a push or pull request, because sites go down for reasons unrelated to the change. The daily and manual runs do fail on a dead link. The README badge shows push runs only.
+
+The link check retries a 429 three times and waits 20 seconds per link. It also accepts a 429 that persists, since that means rate limiting, not a dead page. It does not accept 403, which usually means a login wall. It skips these hosts:
+
+| Host | Reason |
+| --- | --- |
+| `xlit.ai4bharat.org` | On 22 Oct 2026 it reset TLS for non-browser clients and answered 500 to a second fetcher. |
+| `datasets.ai4bharat.org` | Same as `xlit.ai4bharat.org`. |
+| `odishaaisummit.org` | Same as `xlit.ai4bharat.org`. |
+
+Open a skipped host in a browser before you rely on it, and remove its pattern from `.markdown-link-check.json` once it answers a plain fetch. The skill in `.agents/skills/check-awesome-odia-ai/` explains each failure.
 
 ## Pull requests
 
 - Keep one topic per PR, and name the added or removed resources in the title.
-- Paste the output of `scripts/check.sh` into the PR body.
+- Paste the output of `scripts/check.sh` and `scripts/check.sh links` into the PR body.
 - Do not reformat or reorder entries you are not changing.
 - Do not force-push a branch under review.

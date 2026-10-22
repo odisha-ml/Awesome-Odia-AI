@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import re
 import sys
+import unicodedata
 
 HEADING = re.compile(r"^(#{2,4}) (.+)$")
 ENTRY = re.compile(r"^- (\S.*)$")
@@ -8,7 +9,8 @@ LINK = re.compile(r"\[[^\]]*\]\(([^)]*)\)")
 
 
 def slug(title, seen):
-    base = re.sub(r"[^\w\- ]", "", title.strip().lower()).replace(" ", "-")
+    kept = (c for c in title.strip().lower() if c in "-_ " or unicodedata.category(c)[0] in "LMN")
+    base = "".join(kept).replace(" ", "-")
     count = seen.get(base, 0)
     seen[base] = count + 1
     return base if count == 0 else f"{base}-{count}"
@@ -16,11 +18,13 @@ def slug(title, seen):
 
 def entry_name(text):
     if text.startswith("["):
-        return text[1 : text.index("](")]
+        return text[1 : text.index("](")] if "](" in text else None
     return re.split(r":| \[\[", text, maxsplit=1)[0]
 
 
 def check(lines):
+    if "<details>" not in lines or "</details>" not in lines:
+        return ["table of contents not found: expected a <details> block on its own lines"], 0
     errors = []
     toc_start = lines.index("<details>")
     toc_end = lines.index("</details>")
@@ -48,7 +52,11 @@ def check(lines):
             errors.append(f"{number}: entry has no http(s) link")
         if "" in targets:
             errors.append(f"{number}: empty link target '()'")
-        name = entry_name(entry.group(1)).strip().lower()
+        name = entry_name(entry.group(1))
+        if name is None:
+            errors.append(f"{number}: entry starts with '[' but has no '](': {line.strip()[:60]}")
+            continue
+        name = name.strip().lower()
         if name in names:
             errors.append(f"{number}: duplicate entry '{name}', first on line {names[name]}")
         names.setdefault(name, number)

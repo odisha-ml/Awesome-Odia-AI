@@ -1,6 +1,6 @@
 # Awesome-Odia-AI
 [![Awesome](_static/awesome.webp)](https://github.com/sindresorhus/awesome) 
-[![Check Markdown links](https://github.com/odisha-ml/Awesome-Odia-AI/actions/workflows/deadlink_checker.yml/badge.svg)](https://github.com/odisha-ml/Awesome-Odia-AI/actions/workflows/deadlink_checker.yml)
+[![Check Markdown links](https://github.com/odisha-ml/Awesome-Odia-AI/actions/workflows/deadlink_checker.yml/badge.svg?branch=main&event=push)](https://github.com/odisha-ml/Awesome-Odia-AI/actions/workflows/deadlink_checker.yml)
 
 Curated list of all AI related resources in Odia Language.
 
