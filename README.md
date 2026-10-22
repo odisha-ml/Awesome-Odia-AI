@@ -50,6 +50,7 @@ Curated list of all AI related resources in Odia Language.
 - NLTM-EILMT Bhashini Translation API System: The sovereign, Bhashini-backed open-source repository providing robust, production-ready bi-directional API/REST endpoints for English to Odia machine translation. [[code](https://github.com/eilmt/NLTM-EILMT)]
 - [mo-odia-translator](https://huggingface.co/rohanbose/mo-odia-translator) : English↔Odia translation model based on mT5 (300M params, Apache-2.0).
 - [qwen3-eng-odia-translation](https://huggingface.co/raghu298/qwen3-eng-odia-translation) : Qwen3-based English-to-Odia translation model fine-tuned for conversational translation (752M params).
+- Back-Translation Still Matters: Study of LLM machine translation for low-resource languages with Odia as a main language. With 1K Odia and Swahili parallel pairs, back-translation beats continued pretraining by 7.7 to 16.4 XCOMET-XXL points in domain, and blind human evaluation on Odia and Sanskrit agrees with the automatic metrics. [[paper](https://arxiv.org/abs/2610.18818)]
   
 ### Transliteration
 
@@ -108,6 +109,7 @@ Curated list of all AI related resources in Odia Language.
 - [Odia-Gemma-7B-Base-Unsloth](https://huggingface.co/OdiaGenAI-LLM/odia-gemma-7b-base-unsloth) : Pre-trained 7B-parameter Odia LLM based on Google Gemma, optimized with Unsloth.
 - [bloomz-1b-odia](https://huggingface.co/sam2ai/bloomz-1b-odia) : BloomZ 1B model pretrained on Odia text.
 - [open_llama_3b_odia_q4-0_gguf](https://huggingface.co/sam2ai/open_llama_3b_odia_q4-0_gguf) : OpenLLaMA 3B Odia model in GGUF Q4_0 quantized format.
+- [Cognita-Mini](https://github.com/prarthna2803/Cognita_Mini_SLM) : 167M-parameter English, Odia and Dogri language model pre-trained from scratch on 2.42B tokens (33.4% Odia), with a LoRA instruction adapter. Its 32k SentencePiece tokenizer needs 8.6× fewer tokens on Odia text than the stock Qwen3 tokenizer (MIT-licensed code). [[report](https://github.com/prarthna2803/Cognita_Mini_SLM/blob/main/docs/REPORT.md)]
 
 ### Fine-Tuned LLM
 - [Odia llama2 7B base](https://huggingface.co/OdiaGenAI/odia_llama2_7B_base): odia_llama2_7B_base is based on Llama2-7b and finetuned with 180k Odia instruction set. [Paper](https://arxiv.org/pdf/2312.12624.pdf)
@@ -189,6 +191,7 @@ Curated list of all AI related resources in Odia Language.
 
 ### Other NLP Resources
 * [TDIL](http://tdil-dc.in/index.php?lang=en) : It contains language application, resources, and tools for Indian languages including Odia. It contains many language applications, resources, and tools for Odia such as Odia terminology application, Odia language search engine, wordnet, English-Odia parallel text corpus, English-Odia machine-assisted translation, text-to-speech software, and many more.  
+* Efficiency Measured in English: Tokeniser-coverage study across eleven Indic scripts. TinyLlama's vocabulary has 0% of Odia's codepoints, so 93.6% of the tokens it emits on Odia are raw bytes, while mBERT discards 87.9% of Odia text as UNK. [[paper](https://arxiv.org/abs/2610.24818)]
 
 ## Audio
 
