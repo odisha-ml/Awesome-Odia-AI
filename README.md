@@ -1,6 +1,6 @@
 # Awesome-Odia-AI
 [![Awesome](_static/awesome.webp)](https://github.com/sindresorhus/awesome) 
-[![Check Markdown links](https://github.com/odisha-ml/Awesome-Odia-AI/actions/workflows/deadlink_checker.yml/badge.svg)](https://github.com/odisha-ml/Awesome-Odia-AI/actions/workflows/deadlink_checker.yml)
+[![Check Markdown links](https://github.com/odisha-ml/Awesome-Odia-AI/actions/workflows/deadlink_checker.yml/badge.svg?branch=main&event=push)](https://github.com/odisha-ml/Awesome-Odia-AI/actions/workflows/deadlink_checker.yml)
 
 Curated list of all AI related resources in Odia Language.
 
@@ -13,17 +13,23 @@ Curated list of all AI related resources in Odia Language.
   - [Translation](#translation)
   - [Transliteration](#transliteration)
   - [Language Understanding](#language-understanding)
+    - [Datasets](#datasets)
     - [Language Model](#language-model)
     - [Word Embedding](#word-embedding)
     - [Morphanalyzers](#morphanalyzers)
   - [Language Generation](#language-generation)
-  - [Text Classification](#text-classification)
+    - [Instruction Set](#instruction-set)
+    - [Pre-train Dataset](#pre-train-dataset)
+  - [Foundation LLM](#foundation-llm)
+  - [Fine-Tuned LLM](#fine-tuned-llm)
+  - [Benchmarking Set](#benchmarking-set)
   - [Text Dataset](#text-dataset)
     - [Parallel Translation Corpus](#parallel-translation-corpus)
     - [Monolingual Corpus](#monolingual-corpus)
     - [Lexical Resources](#lexical-resources)
-    - [POS Tagged Corpus](#pos-tagged-corpus)
-    - [Dialect Detection Corpus](#dialect-detection-corpus)
+    - [POS Tagged corpus](#pos-tagged-corpus)
+    - [Dialect Detection corpus](#dialect-detection-corpus)
+  - [Text Classification](#text-classification)
   - [NLP Libraries / Tools](#nlp-libraries--tools)
   - [Other NLP Resources](#other-nlp-resources)
 - [Audio](#audio)
@@ -37,6 +43,7 @@ Curated list of all AI related resources in Odia Language.
 - [Events](#events)
 - [Community](#community)
   - [Policy & Ecosystem](#policy--ecosystem)
+- [Contributing](#contributing)
 
 </details>
 
@@ -77,27 +84,27 @@ Curated list of all AI related resources in Odia Language.
 #### Word Embedding
 - [FastText (CommonCrawl + Wikipedia)](https://fasttext.cc/docs/en/crawl-vectors.html) : Pretrained Word vector (CommonCrawl + Wikipedia). Trained on Common Crawl and Wikipedia using fastText. Select the language "oriya" from the model list.
 - [FastText (Wikipedia)](https://fasttext.cc/docs/en/pretrained-vectors.html) : Pretrained Word vector (Wikipedia). Trained on Wikipedia using fastText. Select the language "oriya" from the model list.
-- IndicFT: Word embeddings for 11 Indian languages trained on IndicCorp. The embeddings are based on the fastText model and are well suited for the morphologically rich nature of Indic languages. [[paper](https://indicnlp.ai4bharat.org/papers/arxiv2020_indicnlp_corpus.pdf)][[code]()][[web](https://web.archive.org/web/20240304135630/https://ai4bharat.iitm.ac.in/indicft/)]
+- IndicFT: Word embeddings for 11 Indian languages trained on IndicCorp. The embeddings are based on the fastText model and are well suited for the morphologically rich nature of Indic languages. [[paper](https://indicnlp.ai4bharat.org/papers/arxiv2020_indicnlp_corpus.pdf)][[web](https://web.archive.org/web/20240304135630/https://ai4bharat.iitm.ac.in/indicft/)]
 - [odia-sentence-similarity-sbert](https://huggingface.co/l3cube-pune/odia-sentence-similarity-sbert) : Sentence-BERT model for Odia semantic similarity and sentence embedding.
 - [odia-sentence-bert-nli](https://huggingface.co/l3cube-pune/odia-sentence-bert-nli) : Sentence-BERT model fine-tuned on Natural Language Inference for Odia sentence embeddings.
 
   
 #### Morphanalyzers
-* [IndicNLP Morphanalyzers](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : Unsupervised morphanalyzers for 10 Indian languages including Odia learnt using morfessor.
+- [IndicNLP Morphanalyzers](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : Unsupervised morphanalyzers for 10 Indian languages including Odia learnt using morfessor.
 
 ### Language Generation
 
 #### Instruction Set
 
-* [Odia master data llama2](https://huggingface.co/datasets/OdiaGenAI/odia_master_data_llama2): This dataset contains 180k Odia instruction sets translated from open-source instruction sets and Odia domain knowledge instruction sets.
-* [Odia context 10k llama2 set](https://huggingface.co/datasets/OdiaGenAI/odia_context_10K_llama2_set): This dataset contains 10K instructions that span various facets of Odisha's unique identity. The instructions cover a wide array of subjects, ranging from the culinary delights in 'RECIPES,' the historical significance of 'HISTORICAL PLACES,' and 'TEMPLES OF ODISHA,' to the intellectual pursuits in 'ARITHMETIC,' 'HEALTH,' and 'GEOGRAPHY.' It also explores the artistic tapestry of Odisha through 'ART AND CULTURE,' which celebrates renowned figures in 'FAMOUS ODIA POETS/WRITERS', and 'FAMOUS ODIA POLITICAL LEADERS'. Furthermore, it encapsulates 'SPORTS' and the 'GENERAL KNOWLEDGE OF ODISHA,' providing an all-encompassing representation of the state.
-* [Roleplay Odia](https://huggingface.co/datasets/OdiaGenAI/roleplay_odia): This dataset contains 1k Odia role play instruction set in conversation format.
-* [OdiEnCorp translation instructions 25k](https://huggingface.co/datasets/OdiaGenAI/OdiEnCorp_translation_instructions_25k): This dataset contains 25k English-to-Odia translation instruction set.
-* [Odia Reasoning Datasets (GU, OD, OpenThoughts)](https://huggingface.co/datasets/OdiaGenAIdata/Reasoning_OD): A suite of newly compiled, highly validated datasets designed to transition LLMs from basic conversational generation to step-by-step logical reasoning.
-* [Odia Gemma 4 Style Polish Mix](https://huggingface.co/datasets/kaushikdash/odia-gemma4-style-polish-mix) : Style transfer and polish instruction dataset for refining Odia LLM outputs.
-* [Odia Instruction Following Dataset](https://huggingface.co/datasets/abhilash88/odia-instruction-dataset) : Large instruction dataset spanning 100K–1M samples for Odia instruction tuning (CC-BY-4.0).
+- [Odia master data llama2](https://huggingface.co/datasets/OdiaGenAI/odia_master_data_llama2): This dataset contains 180k Odia instruction sets translated from open-source instruction sets and Odia domain knowledge instruction sets.
+- [Odia context 10k llama2 set](https://huggingface.co/datasets/OdiaGenAI/odia_context_10K_llama2_set): This dataset contains 10K instructions that span various facets of Odisha's unique identity. The instructions cover a wide array of subjects, ranging from the culinary delights in 'RECIPES,' the historical significance of 'HISTORICAL PLACES,' and 'TEMPLES OF ODISHA,' to the intellectual pursuits in 'ARITHMETIC,' 'HEALTH,' and 'GEOGRAPHY.' It also explores the artistic tapestry of Odisha through 'ART AND CULTURE,' which celebrates renowned figures in 'FAMOUS ODIA POETS/WRITERS', and 'FAMOUS ODIA POLITICAL LEADERS'. Furthermore, it encapsulates 'SPORTS' and the 'GENERAL KNOWLEDGE OF ODISHA,' providing an all-encompassing representation of the state.
+- [Roleplay Odia](https://huggingface.co/datasets/OdiaGenAI/roleplay_odia): This dataset contains 1k Odia role play instruction set in conversation format.
+- [OdiEnCorp translation instructions 25k](https://huggingface.co/datasets/OdiaGenAI/OdiEnCorp_translation_instructions_25k): This dataset contains 25k English-to-Odia translation instruction set.
+- [Odia Reasoning Datasets (GU, OD, OpenThoughts)](https://huggingface.co/datasets/OdiaGenAIdata/Reasoning_OD): A suite of newly compiled, highly validated datasets designed to transition LLMs from basic conversational generation to step-by-step logical reasoning.
+- [Odia Gemma 4 Style Polish Mix](https://huggingface.co/datasets/kaushikdash/odia-gemma4-style-polish-mix) : Style transfer and polish instruction dataset for refining Odia LLM outputs.
+- [Odia Instruction Following Dataset](https://huggingface.co/datasets/abhilash88/odia-instruction-dataset) : Large instruction dataset spanning 100K–1M samples for Odia instruction tuning (CC-BY-4.0).
 
-#### Pe-train Dataset
+#### Pre-train Dataset
 
 - [CulturaX](https://huggingface.co/datasets/uonlp/CulturaX): Multilingual dataset with monolingual data for Indic languages including Odia. [Paper](https://arxiv.org/abs/2309.09400) — Odia-only filtered version: [culturax-odia](https://huggingface.co/datasets/OdiaGenAIdata/culturax-odia)
 - [Varta](https://huggingface.co/datasets/rahular/varta): The dataset contains 41.8 million news articles in 14 Indic languages and English, crawled from DailyHunt, a popular news aggregator in India that pulls high-quality articles from multiple trusted and reputed news publishers.
@@ -123,75 +130,74 @@ Curated list of all AI related resources in Odia Language.
 
 
 ### Benchmarking Set
-* [Airavata Evaluation Suite](https://huggingface.co/collections/ai4bharat/airavata-evaluation-suite-65b13b7b68165de71ba0b333): A collection of benchmarks used for evaluation of Airavata, a Hindi instruction-tuned model on top of Sarvam's OpenHathi base model.
-* [Indic LLM Benchmark](https://huggingface.co/Indic-Benchmark): A collection of LLM benchmark data in Gujurati, Nepali, Malayalam, Hindi, Telugu, Marathi, Kannada, Bengali.
-* [MILU: Multi-task Indic Language Understanding](https://github.com/AI4Bharat/MILU): A comprehensive, culturally grounded evaluation framework featuring 4,525 highly verified Odia questions spanning 41 distinct domains.
-* [Odia-ARC](https://huggingface.co/datasets/tripathysagar/odia-arc) : Translated ARC (AI2 Reasoning Challenge) benchmark for Odia (197+ downloads).
-* [Odia-GSM8K](https://huggingface.co/datasets/tripathysagar/odia-gsm8k) : Translated GSM8K math reasoning benchmark for Odia (153+ downloads).
-* [Odia-TruthfulQA](https://huggingface.co/datasets/tripathysagar/odia-truthfulqa) : Translated TruthfulQA benchmark for Odia (122+ downloads).
-* [Odia-TruthfulQA-MC](https://huggingface.co/datasets/tripathysagar/odia-truthfulqa-mc) : Multiple-choice variant of Odia TruthfulQA for MCQ-style evaluation (79+ downloads).
-* [Odia-HellaSwag](https://huggingface.co/datasets/tripathysagar/odia-hellaswag) : Translated HellaSwag commonsense reasoning benchmark for Odia (148+ downloads).
-* [Odia-Winogrande](https://huggingface.co/datasets/tripathysagar/odia-winogrande) : Translated Winogrande coreference resolution benchmark for Odia (146+ downloads).
-* [Indic-KCC Agri-Advisory Benchmark](https://github.com/sthanika-ai/Indic-KCC-Agri-Advisory-Benchmark): Open-ended agricultural-advisory QA benchmark with 500 real Kisan Call Centre questions translated from English into Odia and 10 other Indian languages. Responses are scored by an LLM judge against the call-centre agent reply. The dataset is [gated on Hugging Face](https://huggingface.co/datasets/sthanika-ai/Indic-KCC-Agri-Advisory-Benchmark) (access must be requested); see the [research report](https://sthanika.ai/research/indic-agri-advisory-2026). The Odia questions are translations, not natively authored.
-* [Odia Eval Benchmark](https://huggingface.co/datasets/saidutta69/odia-eval-benchmark) : Unified Odia evaluation set of 125,243 samples from 33 datasets across 9 tasks (MIT).
-* [IndicParam](https://huggingface.co/datasets/bharatgenai/IndicParam) : Human-curated multiple-choice benchmark of 13,207 questions in 11 low-resource Indic languages, including Odia (CC-BY-NC-4.0). [[paper](https://arxiv.org/abs/2512.00333)]
-* IndicIFEval: Verifiable instruction-following benchmark for 14 Indic languages, including Odia. [[paper](https://arxiv.org/abs/2602.22125)][[code](https://github.com/AI4Bharat/IndicIFEval)]
+- [Airavata Evaluation Suite](https://huggingface.co/collections/ai4bharat/airavata-evaluation-suite-65b13b7b68165de71ba0b333): A collection of benchmarks used for evaluation of Airavata, a Hindi instruction-tuned model on top of Sarvam's OpenHathi base model.
+- [Indic LLM Benchmark](https://huggingface.co/Indic-Benchmark): A collection of LLM benchmark data in Gujurati, Nepali, Malayalam, Hindi, Telugu, Marathi, Kannada, Bengali.
+- [MILU: Multi-task Indic Language Understanding](https://github.com/AI4Bharat/MILU): A comprehensive, culturally grounded evaluation framework featuring 4,525 highly verified Odia questions spanning 41 distinct domains.
+- [Odia-ARC](https://huggingface.co/datasets/tripathysagar/odia-arc) : Translated ARC (AI2 Reasoning Challenge) benchmark for Odia (197+ downloads).
+- [Odia-GSM8K](https://huggingface.co/datasets/tripathysagar/odia-gsm8k) : Translated GSM8K math reasoning benchmark for Odia (153+ downloads).
+- [Odia-TruthfulQA](https://huggingface.co/datasets/tripathysagar/odia-truthfulqa) : Translated TruthfulQA benchmark for Odia (122+ downloads).
+- [Odia-TruthfulQA-MC](https://huggingface.co/datasets/tripathysagar/odia-truthfulqa-mc) : Multiple-choice variant of Odia TruthfulQA for MCQ-style evaluation (79+ downloads).
+- [Odia-HellaSwag](https://huggingface.co/datasets/tripathysagar/odia-hellaswag) : Translated HellaSwag commonsense reasoning benchmark for Odia (148+ downloads).
+- [Odia-Winogrande](https://huggingface.co/datasets/tripathysagar/odia-winogrande) : Translated Winogrande coreference resolution benchmark for Odia (146+ downloads).
+- [Indic-KCC Agri-Advisory Benchmark](https://github.com/sthanika-ai/Indic-KCC-Agri-Advisory-Benchmark): Open-ended agricultural-advisory QA benchmark with 500 real Kisan Call Centre questions translated from English into Odia and 10 other Indian languages. Responses are scored by an LLM judge against the call-centre agent reply. The dataset is [gated on Hugging Face](https://huggingface.co/datasets/sthanika-ai/Indic-KCC-Agri-Advisory-Benchmark) (access must be requested); see the [research report](https://sthanika.ai/research/indic-agri-advisory-2026). The Odia questions are translations, not natively authored.
+- [Odia Eval Benchmark](https://huggingface.co/datasets/saidutta69/odia-eval-benchmark) : Unified Odia evaluation set of 125,243 samples from 33 datasets across 9 tasks (MIT).
+- [IndicParam](https://huggingface.co/datasets/bharatgenai/IndicParam) : Human-curated multiple-choice benchmark of 13,207 questions in 11 low-resource Indic languages, including Odia (CC-BY-NC-4.0). [[paper](https://arxiv.org/abs/2512.00333)]
+- IndicIFEval: Verifiable instruction-following benchmark for 14 Indic languages, including Odia. [[paper](https://arxiv.org/abs/2602.22125)][[code](https://github.com/AI4Bharat/IndicIFEval)]
 
 ### Text Dataset
 
 #### Parallel Translation Corpus
-* [OdiEnCorp 2.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3211) : This dataset contains 97K English-Odia parallel sentences and serving in [WAT2020](http://lotus.kuee.kyoto-u.ac.jp/WAT/WAT2020/index.html) for Odia-English machine translation task. [Paper](https://www.aclweb.org/anthology/2020.wildre-1.3.pdf) 
-* [OPUS Corpus](http://opus.nlpl.eu/) : It contains parallel sentences of other languages with Odia. The collection of data are domain-specific and noisy.  
-* [OdiEnCorp 1.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2879) : This dataset contains 30K English-Odia parallel sentences. [Paper](https://link.springer.com/chapter/10.1007/978-981-13-9282-5_47) 
-* [IndoWordnet Parallel Corpus](https://github.com/anoopkunchukuttan/indowordnet_parallel) : Parallel corpora mined from IndoWordNet gloss and/or examples for Indian-Indian language corpora (6.3 million segments, 18 languages including Odia). [Paper](https://github.com/anoopkunchukuttan/indowordnet_parallel/blob/master/iwn_parallel_2020.pdf)
-* [PMIndia](http://data.statmt.org/pmindia/) : Parallel corpus for En-Indian languages mined from Mann ki Baat speeches of the PM of India. It contains 38K English-Odia parallel sentences.[Paper](https://arxiv.org/abs/2001.09907) 
-* [CVIT PIB](https://web.archive.org/web/20231205223617/http://preon.iiit.ac.in/~jerin/bhasha/) : Parallel corpus for En-Indian languages mined from press information bureau website of India. It contains 60K English-Odia parallel sentences.
-* [Samanantar](https://datasets.ai4bharat.org/samanantar/) is the largest publicly available parallel corpora collection for Indic languages. The corpus has 49.6M sentence pairs between English to Indian Languages.
-* [BPCC](https://ai4bharat.iitm.ac.in/areas/nmt) is a comprehensive and publicly available parallel corpus containing a mix of Human labelled data and automatically mined data; totaling to approximately 230 million bitext pairs[[Paper](https://arxiv.org/abs/2305.16307)]].
-* [English–Odia Entertainment Parallel Corpus](https://www.futurebeeai.com/dataset/parallel-corpora/oriya-odia-english-translated-parallel-corpus-for-entertainment-domain) : Domain-specific English–Odia sentence-aligned parallel corpus (50k+ pairs) focused on entertainment content.
+- [OdiEnCorp 2.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3211) : This dataset contains 97K English-Odia parallel sentences and serving in [WAT2020](http://lotus.kuee.kyoto-u.ac.jp/WAT/WAT2020/index.html) for Odia-English machine translation task. [Paper](https://www.aclweb.org/anthology/2020.wildre-1.3.pdf) 
+- [OPUS Corpus](http://opus.nlpl.eu/) : It contains parallel sentences of other languages with Odia. The collection of data are domain-specific and noisy.  
+- [OdiEnCorp 1.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2879) : This dataset contains 30K English-Odia parallel sentences and 221K Odia monolingual sentences. [Paper](https://link.springer.com/chapter/10.1007/978-981-13-9282-5_47) 
+- [IndoWordnet Parallel Corpus](https://github.com/anoopkunchukuttan/indowordnet_parallel) : Parallel corpora mined from IndoWordNet gloss and/or examples for Indian-Indian language corpora (6.3 million segments, 18 languages including Odia). [Paper](https://github.com/anoopkunchukuttan/indowordnet_parallel/blob/master/iwn_parallel_2020.pdf)
+- [PMIndia](http://data.statmt.org/pmindia/) : Parallel corpus for En-Indian languages mined from Mann ki Baat speeches of the PM of India. It contains 38K English-Odia parallel sentences.[Paper](https://arxiv.org/abs/2001.09907) 
+- [CVIT PIB](https://web.archive.org/web/20231205223617/http://preon.iiit.ac.in/~jerin/bhasha/) : Parallel corpus for En-Indian languages mined from press information bureau website of India. It contains 60K English-Odia parallel sentences.
+- [Samanantar](https://datasets.ai4bharat.org/samanantar/) is the largest publicly available parallel corpora collection for Indic languages. The corpus has 49.6M sentence pairs between English to Indian Languages.
+- [BPCC](https://ai4bharat.iitm.ac.in/areas/nmt) is a comprehensive and publicly available parallel corpus containing a mix of Human labelled data and automatically mined data; totaling to approximately 230 million bitext pairs[[Paper](https://arxiv.org/abs/2305.16307)]].
+- [English–Odia Entertainment Parallel Corpus](https://www.futurebeeai.com/dataset/parallel-corpora/oriya-odia-english-translated-parallel-corpus-for-entertainment-domain) : Domain-specific English–Odia sentence-aligned parallel corpus (50k+ pairs) focused on entertainment content.
 
 #### Monolingual Corpus
-* [Odia News Corpus](https://www.soumendrak.com/blog/scrape-news-website-using-scrapy/) Odia Monolingual News Corpus of more than 1.5GB. [Dataset](https://www.kaggle.com/datasets/soumendrak/odiamonolingualnewscorpus)
-* [EMILLE Corpus](https://www.lancaster.ac.uk/fass/projects/corpus/emille/) : It contains fourteen monolingual corpora for Indian languages including Odia.[Manual](https://www.lancaster.ac.uk/fass/projects/corpus/emille/MANUAL.htm) 
-* [OdiEnCorp 1.0](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2879) : This dataset contains 221K Odia sentences.[Paper](https://link.springer.com/chapter/10.1007/978-981-13-9282-5_47) 
-* [AI4Bharat-IndicNLP Corpus](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : The text corpus not available now (will be available later). It used 3.5M Odia sentences to build the embedding. Vocabulary frequency files are available.[Paper](https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf)
-* [OSCAR Corpus](https://oscar-corpus.com/) : It contains around 300K Odia sentences.
-* [Large Odia LLM Pre-training Corpus (pre_train_odia_data_processed)](https://huggingface.co/datasets/OdiaGenAIdata/pre_train_odia_data_processed): A uniformly processed, aggressively deduplicated amalgamation of massive Odia text data of 6.4GB.
-* [IndicDialogue (Odia Subtitles)](https://data.mendeley.com/datasets/wcb4bxbyxx) : Large subtitle and dialogue corpus from OpenSubtitles in 10 Indic languages including Odia, with 6.8M+ Odia dialogues.
-* [Odia-data-collection](https://huggingface.co/datasets/Minutor/Odia-data-collection) : Aggregated Odia text dataset on Hugging Face created for language training.
-* [odia-text-dataset](https://huggingface.co/datasets/hemendra7011/odia-text-dataset) : Large curated Odia text dataset for language modeling (513+ downloads, Apache-2.0).
-* [BertOdia_small](https://huggingface.co/datasets/shantipriya/BertOdia_small) : Odia text dataset curated for BERT-style masked language model pretraining (118+ downloads).
-* [Odia Web Corpus v2](https://huggingface.co/datasets/saidutta69/Odia-Web-Corpus-v2) : Multi-source Odia corpus of 2.17M records (~601M estimated tokens) for LLM continual pretraining (CC-BY-4.0).
+- [Odia News Corpus](https://www.soumendrak.com/blog/scrape-news-website-using-scrapy/) Odia Monolingual News Corpus of more than 1.5GB. [Dataset](https://www.kaggle.com/datasets/soumendrak/odiamonolingualnewscorpus)
+- [EMILLE Corpus](https://www.lancaster.ac.uk/fass/projects/corpus/emille/) : It contains fourteen monolingual corpora for Indian languages including Odia.[Manual](https://www.lancaster.ac.uk/fass/projects/corpus/emille/MANUAL.htm) 
+- [AI4Bharat-IndicNLP Corpus](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : The text corpus not available now (will be available later). It used 3.5M Odia sentences to build the embedding. Vocabulary frequency files are available.[Paper](https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf)
+- [OSCAR Corpus](https://oscar-corpus.com/) : It contains around 300K Odia sentences.
+- [Large Odia LLM Pre-training Corpus (pre_train_odia_data_processed)](https://huggingface.co/datasets/OdiaGenAIdata/pre_train_odia_data_processed): A uniformly processed, aggressively deduplicated amalgamation of massive Odia text data of 6.4GB.
+- [IndicDialogue (Odia Subtitles)](https://data.mendeley.com/datasets/wcb4bxbyxx) : Large subtitle and dialogue corpus from OpenSubtitles in 10 Indic languages including Odia, with 6.8M+ Odia dialogues.
+- [Odia-data-collection](https://huggingface.co/datasets/Minutor/Odia-data-collection) : Aggregated Odia text dataset on Hugging Face created for language training.
+- [odia-text-dataset](https://huggingface.co/datasets/hemendra7011/odia-text-dataset) : Large curated Odia text dataset for language modeling (513+ downloads, Apache-2.0).
+- [BertOdia_small](https://huggingface.co/datasets/shantipriya/BertOdia_small) : Odia text dataset curated for BERT-style masked language model pretraining (118+ downloads).
+- [Odia Web Corpus v2](https://huggingface.co/datasets/saidutta69/Odia-Web-Corpus-v2) : Multi-source Odia corpus of 2.17M records (~601M estimated tokens) for LLM continual pretraining (CC-BY-4.0).
 
 #### Lexical Resources
-* [IndoWordNet](http://www.cfilt.iitb.ac.in/indowordnet/) : Wordnet for Indian languages including Odia.
+- [IndoWordNet](http://www.cfilt.iitb.ac.in/indowordnet/) : Wordnet for Indian languages including Odia.
 
 
 #### POS Tagged corpus
-* [Indian Language Corpora Initiative](https://web.archive.org/web/20240414185340/http://sanskrit.jnu.ac.in/ilci/index.jsp/) : It contains parallel annotated corpora in 12 Indian languages including Odia (tourism and health domain). 
+- [Indian Language Corpora Initiative](https://web.archive.org/web/20240414185340/http://sanskrit.jnu.ac.in/ilci/index.jsp/) : It contains parallel annotated corpora in 12 Indian languages including Odia (tourism and health domain). 
 - [Odia Treebank (ODTB)](https://github.com/UniversalDependencies/UD_Odia-ODTB/tree/dev) : Odia UD Treebank, part of **Universal Dependencies v2.18** (24th release, 353 treebanks across 193 languages). Expanded from 1,029 to **5,818 annotated instances**. Links: [UD v2.18 Release](https://universaldependencies.org/#download) — [Odia ODTB Treebank Page](https://universaldependencies.org/treebanks/or_odtb/index.html)
 
 #### Dialect Detection corpus
-* [Odia-Santali Dialect Detection Corpus](https://github.com/shantipriyap/Odia-Santali-Dialect-Detection-Dataset/) : This corpus contains text data of Odia and Santali written in Odia script. 
+- [Odia-Santali Dialect Detection Corpus](https://github.com/shantipriyap/Odia-Santali-Dialect-Detection-Dataset/) : This corpus contains text data of Odia and Santali written in Odia script. 
 
 ### Text Classification
-* [Odia News Article Classification](https://www.kaggle.com/disisbig/odia-news-dataset) : This dataset contains approxmately 19,000 news article headlines collected from Odia news websites. The labeled dataset is splitted into training and testset suitable for supervised text classification. 
-* [AI4Bharat IndicNLP News Articles](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : This datasets comprising news articles and their categories for 9 languages including Odia. For Odia language, it has 4 classes (business, crime, entertainment, sports) and each class contains 7.5K news articles. The dataset is balanced across classes. [Paper](https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf)
-* [MTEB: OdiaNewsClassification](https://huggingface.co/datasets/mteb/OdiaNewsClassification) : A heavily curated 3-class classification testbed comprising over 17,200 journalistic articles. Officially integrated into the MTEB standard.
-* [Odia Sentiment MuRIL v4](https://huggingface.co/Baps24/odia-sentiment-muril-v4) : An advanced sentiment classifier built natively upon the MuRIL framework.
-* [Odia Sentiment Dataset](https://huggingface.co/datasets/Baps24/odia-sentiment-dataset) : Curated Odia sentiment analysis dataset for training and evaluation.
-* [SampurNER Odia IndicBERTv2](https://huggingface.co/prachuryyaIITG/SampurNER_Odia_IndicBERTv2) : Named Entity Recognition model for Odia built on IndicBERTv2 (MIT license).
-* [odia_news_classification](https://huggingface.co/datasets/mlexplorer008/odia_news_classification) : Odia news classification dataset with labeled categories (136+ downloads, MIT license).
+- [Odia News Article Classification](https://www.kaggle.com/disisbig/odia-news-dataset) : This dataset contains approxmately 19,000 news article headlines collected from Odia news websites. The labeled dataset is splitted into training and testset suitable for supervised text classification. 
+- [AI4Bharat IndicNLP News Articles](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : This datasets comprising news articles and their categories for 9 languages including Odia. For Odia language, it has 4 classes (business, crime, entertainment, sports) and each class contains 7.5K news articles. The dataset is balanced across classes. [Paper](https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf)
+- [MTEB: OdiaNewsClassification](https://huggingface.co/datasets/mteb/OdiaNewsClassification) : A heavily curated 3-class classification testbed comprising over 17,200 journalistic articles. Officially integrated into the MTEB standard.
+- [Odia Sentiment MuRIL v4](https://huggingface.co/Baps24/odia-sentiment-muril-v4) : An advanced sentiment classifier built natively upon the MuRIL framework.
+- [Odia Sentiment Dataset](https://huggingface.co/datasets/Baps24/odia-sentiment-dataset) : Curated Odia sentiment analysis dataset for training and evaluation.
+- [SampurNER Odia IndicBERTv2](https://huggingface.co/prachuryyaIITG/SampurNER_Odia_IndicBERTv2) : Named Entity Recognition model for Odia built on IndicBERTv2 (MIT license).
+- [odia_news_classification](https://huggingface.co/datasets/mlexplorer008/odia_news_classification) : Odia news classification dataset with labeled categories (136+ downloads, MIT license).
 
-### NLP Libraries / Tools 
-* [Indic NLP Library](https://github.com/anoopkunchukuttan/indic_nlp_library) : It is a python based NLP library for Indian language text processing including Odia.
-* [Odia Romanization Script](https://github.com/shantipriyap/odia_nlp) : The perl script "odiaroman" maps the Devnagri (Odia) to Latin.
+### NLP Libraries / Tools
+- [Indic NLP Library](https://github.com/anoopkunchukuttan/indic_nlp_library) : It is a python based NLP library for Indian language text processing including Odia.
+- [Odia Romanization Script](https://github.com/shantipriyap/odia_nlp) : The perl script "odiaroman" maps the Devnagri (Odia) to Latin.
 - [OpenOdia : Tools for Odia language](https://github.com/soumendrak/openodia)
 - [BrahmicTokenizer-131K](https://github.com/theschoolofai/BrahmicTokenizer-131K): A 131K-vocabulary multilingual tokenizer optimized for Brahmic scripts including Odia, outperforming standard tokenizers in token fertility and efficiency. [[paper](https://arxiv.org/abs/2605.29379)][[model](https://huggingface.co/theschoolofai/BrahmicTokenizer-131K)]
 
 ### Other NLP Resources
-* [TDIL](http://tdil-dc.in/index.php?lang=en) : It contains language application, resources, and tools for Indian languages including Odia. It contains many language applications, resources, and tools for Odia such as Odia terminology application, Odia language search engine, wordnet, English-Odia parallel text corpus, English-Odia machine-assisted translation, text-to-speech software, and many more.  
-* Efficiency Measured in English: Tokeniser-coverage study across eleven Indic scripts. TinyLlama's vocabulary has 0% of Odia's codepoints, so 93.6% of the tokens it emits on Odia are raw bytes, while mBERT discards 87.9% of Odia text as UNK. [[paper](https://arxiv.org/abs/2610.24818)]
+- [TDIL](http://tdil-dc.in/index.php?lang=en) : It contains language application, resources, and tools for Indian languages including Odia. It contains many language applications, resources, and tools for Odia such as Odia terminology application, Odia language search engine, wordnet, English-Odia parallel text corpus, English-Odia machine-assisted translation, text-to-speech software, and many more.  
+- Efficiency Measured in English: Tokeniser-coverage study across eleven Indic scripts. TinyLlama's vocabulary has 0% of Odia's codepoints, so 93.6% of the tokens it emits on Odia are raw bytes, while mBERT discards 87.9% of Odia text as UNK. [[paper](https://arxiv.org/abs/2610.24818)]
 
 ## Audio
 
@@ -210,7 +216,6 @@ Curated list of all AI related resources in Odia Language.
 
 ### Text-to-Speech
 - Indic-TTS [[Paper](https://arxiv.org/abs/2211.09536)][[Code](https://github.com/AI4Bharat/Indic-TTS)] [[Try It Live](https://models.ai4bharat.org/#/tts)]][[Video](https://youtu.be/I3eo8IUAP7s)]
-- [omni-odia-tts](https://huggingface.co/OliveVoice/omni-odia-tts) : Omni TTS model for Odia speech synthesis.
 - [mms-tts-ory](https://huggingface.co/facebook/mms-tts-ory) : Meta Massively Multilingual Speech (MMS) VITS text-to-speech checkpoint for Odia (CC-BY-NC-4.0).
 - [indic-parler-tts](https://huggingface.co/ai4bharat/indic-parler-tts) : AI4Bharat 0.9B multilingual text-to-speech model supporting Odia (Apache-2.0, gated).
 - [SPRING_F5](https://huggingface.co/SPRINGLab/SPRING_F5) : F5-TTS fine-tuned for 23 Indian languages and English, including Odia (Apache-2.0).
@@ -218,8 +223,8 @@ Curated list of all AI related resources in Odia Language.
 
 
 ### Speech Dataset
-* [IIT Madras IndicTTS](https://web.archive.org/web/20260519082015/https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia.
-* [LDC-IL](https://data.ldcil.org/speech/speech-raw-corpus/odia-raw-speech-corpuss) :  It includes Odia annotated speech corpora which has voices of 450 different native speakers.
+- [IIT Madras IndicTTS](http://web.archive.org/web/20211031184427/https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia.
+- [LDC-IL](https://data.ldcil.org/speech/speech-raw-corpus/odia-raw-speech-corpuss) :  It includes Odia annotated speech corpora which has voices of 450 different native speakers.
 - [Mozilla Common Voice](https://mozilladatacollective.com/datasets/cmn2cww3s01dfo107etbjbif1) : The Mozilla Common Voice project is a community-led project to build a large multilingual dataset for speech recognition.
 - [Odia text to speech dataset](https://commons.wikimedia.org/wiki/Category:Odia_pronunciation) : 55000 odia words pronunced in various dialets of Odisha like Baleswari, Puri, Cuttack, etc.
 - [Odia ASR Benchmark Dataset for Noisy Speech Recognition](https://aikosh.indiaai.gov.in/home/datasets/details/odia_asr_benchmark_dataset_for_noisy_speech_recognition_kathath_odia_noisy_test_known.html) : About 500 MB of CC-BY-4.0 data. 
@@ -234,28 +239,28 @@ Curated list of all AI related resources in Odia Language.
 ## Computer Vision
 
 ### OCR
-* [Indic-OCR](https://indic-ocr.github.io/) : OCR tools for Indic scripts including Odia. Also, supports _Ol Chiki_ (Santali).
-* [IndicPhotoOCR (Scene Text Recognition)](https://github.com/Bhashini-IITJ/IndicPhotoOCR) : A high-velocity, end-to-end scene text recognition toolkit capable of parsing complex, visually noisy Odia script in organic environments.
-* [DocuExtract: Odia Handwritten OCR](https://github.com/tell2jyoti/docuextract-odia-ocr) : An advanced computational vision system employing progressive vision-language fine-tuning to transcribe stochastic, highly erratic handwritten Odia text.
-* [Odia Lipi OCR Data](https://huggingface.co/datasets/OdiaGenAIOCR/Odia-lipi-ocr-data) : Open Odia OCR benchmark dataset of scanned Odia text with validated Unicode annotations.
-* [Odia OCR Merged Multi-Source Dataset](https://huggingface.co/datasets/shantipriya/odia-ocr-merged) : Merged OCR dataset combining OdiaGenAIOCR and other sources (≈192k samples) for printed and handwritten Odia OCR.
-* [odia-ocr-qwen-finetuned](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned) : Production-ready Qwen2.5-VL-3B-Instruct VLM fine-tuned on 58,720 Odia text-image pairs for robust OCR.
-* [odia-ocr-qwen-finetuned_v2](https://huggingface.co/shantipriya/odia-ocr-qwen-finetuned_v2) : Updated Odia OCR Qwen model trained on ~73k word-level Odia crops spanning diverse fonts and print qualities.
-* [odia-ocr-qwen-finetuned_v3](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned_v3) : Third-generation Odia OCR model with improved accuracy across diverse scripts and degradations.
-* [odia-ocr-qwen-finetuned_v3-merged](https://huggingface.co/shantipriya/odia-ocr-qwen-finetuned_v3-merged) : Merged checkpoint of Odia OCR v3 fine-tunes for consolidated robustness (28+ downloads).
-* [odia-ocr-qwen-finetuned-merged](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned-merged) : Merged version of Odia OCR Qwen model combining multiple fine-tune checkpoints for enhanced robustness.
-* [odia-ocr-synth](https://huggingface.co/datasets/Pritosh/odia-ocr-synth) : Large-scale synthetic Odia OCR dataset with printed text samples (653+ downloads, MIT license).
-* [odia-ocr-synth-v2](https://huggingface.co/datasets/Pritosh/odia-ocr-synth-v2) : Extended synthetic Odia OCR dataset (118+ downloads, MIT license).
-* [odia-ocr-qwen35-qlora-v5](https://huggingface.co/Pritosh/odia-ocr-qwen35-qlora-v5) : Qwen 3.5-based Odia OCR model fine-tuned with QLoRA (Apache-2.0).
-* [odia-ocr-grpo-v2](https://huggingface.co/Pritosh/odia-ocr-grpo-v2) : Odia OCR model optimized using GRPO reinforcement learning (Apache-2.0).
-* [odia_ocr_benchmark_data](https://huggingface.co/datasets/OdiaGenAIOCR/odia_ocr_benchmark_data) : Standardized Odia OCR evaluation benchmark dataset (CC-BY-4.0).
-* [OdiaGenAIOCR synthetic_data](https://huggingface.co/datasets/OdiaGenAIOCR/synthetic_data) : Synthetic Odia text images paired with Unicode transcriptions for OCR training (CC-BY-NC-SA-4.0, gated).
+- [Indic-OCR](https://indic-ocr.github.io/) : OCR tools for Indic scripts including Odia. Also, supports _Ol Chiki_ (Santali).
+- [IndicPhotoOCR (Scene Text Recognition)](https://github.com/Bhashini-IITJ/IndicPhotoOCR) : A high-velocity, end-to-end scene text recognition toolkit capable of parsing complex, visually noisy Odia script in organic environments.
+- [DocuExtract: Odia Handwritten OCR](https://github.com/tell2jyoti/docuextract-odia-ocr) : An advanced computational vision system employing progressive vision-language fine-tuning to transcribe stochastic, highly erratic handwritten Odia text.
+- [Odia Lipi OCR Data](https://huggingface.co/datasets/OdiaGenAIOCR/Odia-lipi-ocr-data) : Open Odia OCR benchmark dataset of scanned Odia text with validated Unicode annotations.
+- [Odia OCR Merged Multi-Source Dataset](https://huggingface.co/datasets/shantipriya/odia-ocr-merged) : Merged OCR dataset combining OdiaGenAIOCR and other sources (≈192k samples) for printed and handwritten Odia OCR.
+- [odia-ocr-qwen-finetuned](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned) : Production-ready Qwen2.5-VL-3B-Instruct VLM fine-tuned on 58,720 Odia text-image pairs for robust OCR.
+- [odia-ocr-qwen-finetuned_v2](https://huggingface.co/shantipriya/odia-ocr-qwen-finetuned_v2) : Updated Odia OCR Qwen model trained on ~73k word-level Odia crops spanning diverse fonts and print qualities.
+- [odia-ocr-qwen-finetuned_v3](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned_v3) : Third-generation Odia OCR model with improved accuracy across diverse scripts and degradations.
+- [odia-ocr-qwen-finetuned_v3-merged](https://huggingface.co/shantipriya/odia-ocr-qwen-finetuned_v3-merged) : Merged checkpoint of Odia OCR v3 fine-tunes for consolidated robustness (28+ downloads).
+- [odia-ocr-qwen-finetuned-merged](https://huggingface.co/OdiaGenAIOCR/odia-ocr-qwen-finetuned-merged) : Merged version of Odia OCR Qwen model combining multiple fine-tune checkpoints for enhanced robustness.
+- [odia-ocr-synth](https://huggingface.co/datasets/Pritosh/odia-ocr-synth) : Large-scale synthetic Odia OCR dataset with printed text samples (653+ downloads, MIT license).
+- [odia-ocr-synth-v2](https://huggingface.co/datasets/Pritosh/odia-ocr-synth-v2) : Extended synthetic Odia OCR dataset (118+ downloads, MIT license).
+- [odia-ocr-qwen35-qlora-v5](https://huggingface.co/Pritosh/odia-ocr-qwen35-qlora-v5) : Qwen 3.5-based Odia OCR model fine-tuned with QLoRA (Apache-2.0).
+- [odia-ocr-grpo-v2](https://huggingface.co/Pritosh/odia-ocr-grpo-v2) : Odia OCR model optimized using GRPO reinforcement learning (Apache-2.0).
+- [odia_ocr_benchmark_data](https://huggingface.co/datasets/OdiaGenAIOCR/odia_ocr_benchmark_data) : Standardized Odia OCR evaluation benchmark dataset (CC-BY-4.0).
+- [OdiaGenAIOCR synthetic_data](https://huggingface.co/datasets/OdiaGenAIOCR/synthetic_data) : Synthetic Odia text images paired with Unicode transcriptions for OCR training (CC-BY-NC-SA-4.0, gated).
 
 ### Multimodal
-* [Odia Visual Genome (OVG)](http://hdl.handle.net/11234/1-5979) : Multimodal English-Odia dataset of Visual Genome image-caption pairs.
-* [Odia Image Captioning Dataset](https://www.futurebeeai.com/dataset/multi-modal-dataset/odia-image-caption-dataset) : FutureBeeAI multimodal dataset of diverse images with Odia captions and rich metadata.
-* [odia-llava-dataset](https://huggingface.co/datasets/sam2ai/odia-llava-dataset) : Hugging Face dataset of Odia instruction-style image-text pairs suitable for training LLaVA-style multimodal Odia models.
-* [paligemma_odia_3b_v1.0](https://huggingface.co/sam2ai/paligemma_odia_3b_v1.0) : PaliGemma 3B vision-language model fine-tuned for Odia image understanding and captioning.
+- [Odia Visual Genome (OVG)](http://hdl.handle.net/11234/1-5979) : Multimodal English-Odia dataset of Visual Genome image-caption pairs.
+- [Odia Image Captioning Dataset](https://www.futurebeeai.com/dataset/multi-modal-dataset/odia-image-caption-dataset) : FutureBeeAI multimodal dataset of diverse images with Odia captions and rich metadata.
+- [odia-llava-dataset](https://huggingface.co/datasets/sam2ai/odia-llava-dataset) : Hugging Face dataset of Odia instruction-style image-text pairs suitable for training LLaVA-style multimodal Odia models.
+- [paligemma_odia_3b_v1.0](https://huggingface.co/sam2ai/paligemma_odia_3b_v1.0) : PaliGemma 3B vision-language model fine-tuned for Odia image understanding and captioning.
 
 ## Applications
 - [Odia Lingua Chatbot](https://github.com/HimanshuMohanty-Git24/Odia_Lingua) : AI-powered Odia language chatbot built with Groq API, Odia TTS (MMS-TTS-ory), and Google Search integration.
@@ -271,3 +276,7 @@ Curated list of all AI related resources in Odia Language.
 ### Policy & Ecosystem
 - [Odisha AI Policy 2025 & Taskforce](https://dowr.odisha.gov.in/sites/default/files/2025-07/Odisha%20AI%20Policy-2025.pdf)
 - [National IndiaAI Mission](https://indiaai.gov.in/)
+
+## Contributing
+
+See [AGENTS.md](AGENTS.md) for the entry format and inclusion rules, and run `scripts/check.sh` before opening a pull request.
