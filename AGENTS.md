@@ -54,9 +54,9 @@ scripts/check.sh links
 
 `scripts/check.sh` needs only `python3` and prints `LIST OK: <n> entries`. CI's `list` job runs it and fails the run when it fails.
 
-`scripts/check.sh links` needs Node 22 or newer for `npx` and network access, and prints `LINKS OK`. CI's `links` job runs it, but a failure there does not fail a push or pull request, because sites go down for reasons unrelated to the change. The daily and manual runs do fail on a dead link. The README badge shows push runs only.
+`scripts/check.sh links` needs Node 22 or newer for `npx` and network access, and prints `LINKS OK`. CI's `links` job runs it, but a failure in that step does not fail a push or pull request, because sites go down for reasons unrelated to the change. The daily and manual runs do fail on a dead link. The README badge shows push runs only.
 
-The link check retries a 429 three times and waits 20 seconds per link. It also accepts a 429 that persists, since that means rate limiting, not a dead page. It does not accept 403, which usually means a login wall. It skips these hosts:
+Each request to a link times out after 20 seconds. A link that answers 429 is retried up to three times, 30 seconds apart unless the server sends `Retry-After`, so a link that keeps answering 429 takes about 90 seconds. A 429 that persists counts as alive, since it means rate limiting, not a dead page. It does not accept 403, which usually means a login wall. It skips these hosts:
 
 | Host | Reason |
 | --- | --- |
