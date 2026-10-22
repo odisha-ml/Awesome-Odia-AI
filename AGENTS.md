@@ -64,6 +64,8 @@ Each request to a link times out after 20 seconds. A link that answers 429 is re
 | `datasets.ai4bharat.org` | Same as `xlit.ai4bharat.org`. |
 | `odishaaisummit.org` | Same as `xlit.ai4bharat.org`. |
 | `indiaai.gov.in` | It answered 403 to GitHub's runners in run 39736737594 on 22 Oct 2026, though curl from another network loaded its home page that day. A 403 here is bot blocking, not a login wall. |
+| `tdil-dc.in` | GitHub's runners got no answer over HTTP (run 39736737594) or HTTPS (run 39737359589) on 22 Oct 2026. The HTTPS page loads from another network. |
+| `egazette.odisha.gov.in` | GitHub's runners got no answer in run 39737359589 on 22 Oct 2026. The Odisha AI Policy gazette PDF loads from another network. |
 
 Open a skipped host in a browser before you rely on it, and remove its pattern from `.markdown-link-check.json` once it answers a plain fetch. The skill in `.agents/skills/check-awesome-odia-ai/` explains each failure.
 

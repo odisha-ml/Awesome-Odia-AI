@@ -8,6 +8,8 @@
     { "pattern": "^https://xlit\\.ai4bharat\\.org" },
     { "pattern": "^https://datasets\\.ai4bharat\\.org" },
     { "pattern": "^https://odishaaisummit\\.org" },
-    { "pattern": "^https://indiaai\\.gov\\.in" }
+    { "pattern": "^https://indiaai\\.gov\\.in" },
+    { "pattern": "^https://tdil-dc\\.in" },
+    { "pattern": "^https://egazette\\.odisha\\.gov\\.in" }
   ]
 }
