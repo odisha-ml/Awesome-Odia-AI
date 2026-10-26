@@ -188,6 +188,8 @@ Curated list of all AI related resources in Odia Language.
 - [Odia Sentiment Dataset](https://huggingface.co/datasets/Baps24/odia-sentiment-dataset) : Curated Odia sentiment analysis dataset for training and evaluation.
 - [SampurNER Odia IndicBERTv2](https://huggingface.co/prachuryyaIITG/SampurNER_Odia_IndicBERTv2) : Named Entity Recognition model for Odia built on IndicBERTv2 (MIT license).
 - [odia_news_classification](https://huggingface.co/datasets/mlexplorer008/odia_news_classification) : Odia news classification dataset with labeled categories (136+ downloads, MIT license).
+- [Yama](https://huggingface.co/arunp0/yama-indic) : Zero-shot text classifier (XLM-RoBERTa-large, 586M parameters) for 11 Indian languages, Hinglish and English, including Odia. Labels and questions are written in English at inference time, and the v3 training data adds 2,324 real Odia text snippets from Sangraha (Apache-2.0).
+- [Chitragupta PII Indic](https://huggingface.co/arunp0/chitragupta-pii-indic) : Personal-data (PII) detection and redaction model (XLM-RoBERTa-large, about 560M parameters, plus a rule layer) for 11 Indian languages, Hinglish and English, including Odia. It tags IDs such as Aadhaar, PAN and UPI, along with phone numbers, addresses and names, and reports 0.940 exact-span F1 on its synthetic Odia test texts (Apache-2.0).
 
 ### NLP Libraries / Tools
 - [Indic NLP Library](https://github.com/anoopkunchukuttan/indic_nlp_library) : It is a python based NLP library for Indian language text processing including Odia.
