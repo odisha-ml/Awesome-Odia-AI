@@ -143,6 +143,7 @@ Curated list of all AI related resources in Odia Language.
 - [Odia Eval Benchmark](https://huggingface.co/datasets/saidutta69/odia-eval-benchmark) : Unified Odia evaluation set of 125,243 samples from 33 datasets across 9 tasks (MIT).
 - [IndicParam](https://huggingface.co/datasets/bharatgenai/IndicParam) : Human-curated multiple-choice benchmark of 13,207 questions in 11 low-resource Indic languages, including Odia (CC-BY-NC-4.0). [[paper](https://arxiv.org/abs/2512.00333)]
 - IndicIFEval: Verifiable instruction-following benchmark for 14 Indic languages, including Odia. [[paper](https://arxiv.org/abs/2602.22125)][[code](https://github.com/AI4Bharat/IndicIFEval)]
+- [Kavach-Eval](https://github.com/Malaya-kumar-swain/kavach-eval) : Red-teaming kit that runs 60 prompt-injection and data-leak probes against an AI assistant in English, Hindi, Hinglish (Romanised), Odia and Tamil, with obfuscated variants such as zero-width characters and look-alike letters. It scores a probe as a success when a planted fake secret leaks, with no LLM judge, and reports attack success by language. The translations were written for the project (Apache-2.0).
 
 ### Text Dataset
 
@@ -215,6 +216,7 @@ Curated list of all AI related resources in Odia Language.
 - [Vaani-FastConformer-Odia](https://huggingface.co/ARTPARK-IISc/Vaani-FastConformer-Odia) : NVIDIA FastConformer model trained on Vaani project Odia speech data for high-performance ASR (Apache-2.0, arXiv:2603.28714).
 - [odia-asr](https://huggingface.co/shantipriya/odia-asr) : ai4bharat/indic-conformer-600m-multilingual fine-tuned on MUCS 2021 Odia speech (OpenSLR-103).
 - [SraVaani-1.0](https://huggingface.co/ARTPARK-IISc/SraVaani-1.0) : Multilingual ASR model from ARTPARK-IISc trained on Vaani data, covering Odia and 13 other languages (MIT, gated).
+- [OpenFlow Odia ASR int8](https://huggingface.co/sachinmallick/openflow-odia-asr-int8) : AI4Bharat's Odia IndicConformer (CTC head, about 120M parameters) as an ONNX model with its MatMul/Gemm weights quantized to int8 (197 MB, against 493 MB for the fp32 source). It is the Odia speech-to-text model in the OpenFlow dictation app (CC-BY-4.0).
 
 ### Text-to-Speech
 - Indic-TTS [[Paper](https://arxiv.org/abs/2211.09536)][[Code](https://github.com/AI4Bharat/Indic-TTS)] [[Try It Live](https://models.ai4bharat.org/#/tts)]][[Video](https://youtu.be/I3eo8IUAP7s)]
@@ -266,6 +268,7 @@ Curated list of all AI related resources in Odia Language.
 
 ## Applications
 - [Odia Lingua Chatbot](https://github.com/HimanshuMohanty-Git24/Odia_Lingua) : AI-powered Odia language chatbot built with Groq API, Odia TTS (MMS-TTS-ory), and Google Search integration.
+- [OpenFlow](https://github.com/Sachin1724/OpenFlow) : Offline voice-dictation and meeting-notes app for Windows. For Odia it uses AI4Bharat's IndicConformer (int8) to write Odia script, translates spoken Odia into English offline through IndicTrans2, and writes the English words in code-mixed Odia speech in English letters (MIT). [[model](https://huggingface.co/sachinmallick/openflow-odia-asr-int8)]
 
 ## Events
 - Global Conference: [ICON 2024](https://au-kbc.org/icon2024/) | [WAT 2025](https://ufal.mff.cuni.cz/wat2025english-indicmultimodaltranslation) | [Odisha AI Summit 2025 & Conference 2024](https://odishaaisummit.org/) | [2023 Pt 2](https://www.youtube.com/live/KZB9bfKkLgM?si=3i9eY22xT-1yZTD8) [2023 Pt 1](https://www.youtube.com/live/GPkWL-9akQc?si=uh0Ay0SKEVlRnX3U) | [2022](https://www.youtube.com/live/MPrU-3s8ccw?si=gxbOFyfI3j3g8UsH) | [2021](https://www.youtube.com/live/iX59_YJzINs?si=TiZmMMeB6Hy28JcZ) | [2020](https://www.youtube.com/live/PF5DScCr5SI?si=znfuwHbrIgHSzgnO)
