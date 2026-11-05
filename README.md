@@ -143,7 +143,7 @@ Curated list of all AI related resources in Odia Language.
 - [Odia Eval Benchmark](https://huggingface.co/datasets/saidutta69/odia-eval-benchmark) : Unified Odia evaluation set of 125,243 samples from 33 datasets across 9 tasks (MIT).
 - [IndicParam](https://huggingface.co/datasets/bharatgenai/IndicParam) : Human-curated multiple-choice benchmark of 13,207 questions in 11 low-resource Indic languages, including Odia (CC-BY-NC-4.0). [[paper](https://arxiv.org/abs/2512.00333)]
 - IndicIFEval: Verifiable instruction-following benchmark for 14 Indic languages, including Odia. [[paper](https://arxiv.org/abs/2602.22125)][[code](https://github.com/AI4Bharat/IndicIFEval)]
-- [Kavach-Eval](https://github.com/Malaya-kumar-swain/kavach-eval) : Red-teaming kit that runs 60 prompt-injection and data-leak probes against an AI assistant in English, Hindi, Hinglish (Romanised), Odia and Tamil, with obfuscated variants such as zero-width characters and look-alike letters. It scores a probe as a success when a planted fake secret leaks, with no LLM judge, and reports attack success by language. The translations were written for the project (Apache-2.0).
+- [Kavach-Eval](https://github.com/Malaya-kumar-swain/kavach-eval) : Red-teaming kit of 60 prompt-injection and data-leak probes in English, Hindi, Hinglish (Romanised), Odia and Tamil (6 of the 60 probes are Odia, all plain). English and Hinglish also have obfuscated variants such as zero-width characters and look-alike letters. It scores a probe as a success when a planted fake secret leaks, with no LLM judge, and reports attack success by language. The translations were written for the project (Apache-2.0).
 
 ### Text Dataset
 
