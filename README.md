@@ -222,6 +222,7 @@ Curated list of all AI related resources in Odia Language.
 - [indic-parler-tts](https://huggingface.co/ai4bharat/indic-parler-tts) : AI4Bharat 0.9B multilingual text-to-speech model supporting Odia (Apache-2.0, gated).
 - [SPRING_F5](https://huggingface.co/SPRINGLab/SPRING_F5) : F5-TTS fine-tuned for 23 Indian languages and English, including Odia (Apache-2.0).
 - [Sooktam-2](https://huggingface.co/bharatgenai/sooktam2) : BharatGen multilingual F5-TTS-based text-to-speech model covering 12 languages, including Odia.
+- [Indic Tiny TTS: Odia](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-odia) : 22.5M-parameter Odia text-to-speech model with female and male voices trained on AI4Bharat Rasa Odia speakers; runs on CPU with PyTorch or ONNX (CC-BY-4.0).
 
 
 ### Speech Dataset
@@ -266,6 +267,7 @@ Curated list of all AI related resources in Odia Language.
 
 ## Applications
 - [Odia Lingua Chatbot](https://github.com/HimanshuMohanty-Git24/Odia_Lingua) : AI-powered Odia language chatbot built with Groq API, Odia TTS (MMS-TTS-ory), and Google Search integration.
+- [Arogya Mitra](https://github.com/Debashree-35/Arogya-Mitra) : Multilingual (Odia, Hindi, English) health-guidance assistant for rural India (Odisha pilot) with emergency detection and a government hospital finder; general guidance only, not diagnosis (MIT).
 
 ## Events
 - Global Conference: [ICON 2024](https://au-kbc.org/icon2024/) | [WAT 2025](https://ufal.mff.cuni.cz/wat2025english-indicmultimodaltranslation) | [Odisha AI Summit 2025 & Conference 2024](https://odishaaisummit.org/) | [2023 Pt 2](https://www.youtube.com/live/KZB9bfKkLgM?si=3i9eY22xT-1yZTD8) [2023 Pt 1](https://www.youtube.com/live/GPkWL-9akQc?si=uh0Ay0SKEVlRnX3U) | [2022](https://www.youtube.com/live/MPrU-3s8ccw?si=gxbOFyfI3j3g8UsH) | [2021](https://www.youtube.com/live/iX59_YJzINs?si=TiZmMMeB6Hy28JcZ) | [2020](https://www.youtube.com/live/PF5DScCr5SI?si=znfuwHbrIgHSzgnO)
