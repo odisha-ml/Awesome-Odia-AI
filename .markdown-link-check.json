@@ -11,6 +11,6 @@
     { "pattern": "^https://indiaai\\.gov\\.in" },
     { "pattern": "^https://tdil-dc\\.in" },
     { "pattern": "^https://egazette\\.odisha\\.gov\\.in" },
-    { "pattern": "^https://oscar-corpus\\.com" }
+    { "pattern": "^https://oscar-corpus\\.com(/|$)" }
   ]
 }
