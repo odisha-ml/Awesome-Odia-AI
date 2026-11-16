@@ -117,6 +117,8 @@ Curated list of all AI related resources in Odia Language.
 - [bloomz-1b-odia](https://huggingface.co/sam2ai/bloomz-1b-odia) : BloomZ 1B model pretrained on Odia text.
 - [open_llama_3b_odia_q4-0_gguf](https://huggingface.co/sam2ai/open_llama_3b_odia_q4-0_gguf) : OpenLLaMA 3B Odia model in GGUF Q4_0 quantized format.
 - [Cognita-Mini](https://github.com/prarthna2803/Cognita_Mini_SLM) : 167M-parameter English, Odia and Dogri language model pre-trained from scratch on 2.42B tokens (33.4% Odia), with a LoRA instruction adapter. Its 32k SentencePiece tokenizer needs 8.6× fewer tokens on Odia text than the stock Qwen3 tokenizer (MIT-licensed code). [[report](https://github.com/prarthna2803/Cognita_Mini_SLM/blob/main/docs/REPORT.md)]
+- [OdiaSLM-60M-Base](https://huggingface.co/arunjmisra2273/OdiaSLM-60M-Base) : Odia small language model pre-trained from scratch by Arun Misra (Bhubaneswar), with a custom Odia tokenizer; the smaller of the two OdiaSLM base models (weights and tokenizer CC-BY-NC-4.0 for academic, research and non-commercial use; commercial use needs a separate licence from the author). [[paper](https://doi.org/10.5281/zenodo.24167433)] [[code](https://github.com/arunjmisra2273/OdiaSLM)]
+- [OdiaSLM-100M-Base](https://huggingface.co/arunjmisra2273/OdiaSLM-100M-Base) : Odia small language model pre-trained from scratch by Arun Misra (Bhubaneswar), with a custom Odia tokenizer; the larger of the two OdiaSLM base models (weights and tokenizer CC-BY-NC-4.0 for academic, research and non-commercial use; commercial use needs a separate licence from the author). [[paper](https://doi.org/10.5281/zenodo.24167433)] [[code](https://github.com/arunjmisra2273/OdiaSLM)]
 
 ### Fine-Tuned LLM
 - [Odia llama2 7B base](https://huggingface.co/OdiaGenAI/odia_llama2_7B_base): odia_llama2_7B_base is based on Llama2-7b and finetuned with 180k Odia instruction set. [Paper](https://arxiv.org/pdf/2312.12624.pdf)
@@ -127,6 +129,7 @@ Curated list of all AI related resources in Odia Language.
 - [Llama-3.2-3B-Instruct-Odia-GGUF](https://huggingface.co/mradermacher/Llama-3.2-3B-Instruct-Odia-GGUF) : Llama 3.2 3B instruct model in GGUF format for Odia (Apache-2.0).
 - [qwen35_0.8b_odia_gguf](https://huggingface.co/TinyOlive/qwen35_0.8b_odia_gguf) : Qwen 3.5 0.8B lightweight GGUF model for Odia.
 - [dhee-nxtgen-qwen3-odia-v2](https://huggingface.co/dheeyantra/dhee-nxtgen-qwen3-odia-v2) : Qwen3-based Odia instruction-tuned model for conversational AI (Apache-2.0).
+- [OdiaSLM-100M-Instruct](https://huggingface.co/arunjmisra2273/OdiaSLM-100M-Instruct) : Instruction-tuned conversational version of OdiaSLM-100M-Base by Arun Misra (OdiaSLM Non-Commercial Research & Educational License v1.0; commercial licensing from the author). [[paper](https://doi.org/10.5281/zenodo.24167433)] [[code](https://github.com/arunjmisra2273/OdiaSLM)]
 
 
 ### Benchmarking Set
