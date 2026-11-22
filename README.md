@@ -229,7 +229,7 @@ Curated list of all AI related resources in Odia Language.
 - [SPRING_F5](https://huggingface.co/SPRINGLab/SPRING_F5) : F5-TTS fine-tuned for 23 Indian languages and English, including Odia (Apache-2.0).
 - [Sooktam-2](https://huggingface.co/bharatgenai/sooktam2) : BharatGen multilingual F5-TTS-based text-to-speech model covering 12 languages, including Odia.
 - [Indic Tiny TTS: Odia](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-odia) : 22.5M-parameter Odia text-to-speech model with female and male voices trained on AI4Bharat Rasa Odia speakers; runs on CPU with PyTorch or ONNX (CC-BY-4.0).
-- [bolo-mms-tts-odia](https://huggingface.co/codebucketsolutions/bolo-mms-tts-odia) : Odia text-to-speech voice (Meta MMS VITS, ONNX) converted for the bolo / sherpa-onnx speech server from [mms-tts-ory](https://huggingface.co/facebook/mms-tts-ory) (CC-BY-NC-4.0). [[code](https://github.com/cb-Sigma/bolo)]
+- [bolo-mms-tts-odia](https://huggingface.co/codebucketsolutions/bolo-mms-tts-odia) : Odia text-to-speech voice (Meta MMS VITS, ONNX) converted for the bolo / sherpa-onnx speech server from [mms-tts-ory](https://huggingface.co/facebook/mms-tts-ory) (CC-BY-NC-4.0). [[code](https://github.com/cB-Sigma/bolo-speech)]
 
 ### Speech Dataset
 - [IIT Madras IndicTTS](https://web.archive.org/web/20211031184427/https://www.iitm.ac.in/donlab/tts/index.php) : The Indic TTS project develops the text-to-speech (TTS) synthesis system for Indian languages including Odia.
