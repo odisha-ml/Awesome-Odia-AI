@@ -61,7 +61,7 @@ Curated list of all AI related resources in Odia Language.
   
 ### Transliteration
 
-- IndicXlit: [[paper](https://arxiv.org/abs/2205.03018)][[web](https://ai4bharat.iitm.ac.in/areas/xlit)][[code](https://github.com/AI4Bharat/IndicTrans2) ][[Demo](https://xlit.ai4bharat.org/)][[PyPi](https://pypi.org/project/ai4bharat-transliteration)]
+- IndicXlit: [[paper](https://arxiv.org/abs/2205.03018)][[web](https://ai4bharat.iitm.ac.in/areas/xlit)][[code](https://github.com/AI4Bharat/IndicTrans2) ][[Demo](https://transliterate.ai4bharat.org/)][[PyPi](https://pypi.org/project/ai4bharat-transliteration)]
 - [open-source unicode converter](https://github.com/OdiaWikimedia/Converter) to transliterate between various languages to Odia language [Demo](https://or.wikipedia.org/s/1hv1).
 
 ### Language Understanding
@@ -157,7 +157,7 @@ Curated list of all AI related resources in Odia Language.
 - [IndoWordnet Parallel Corpus](https://github.com/anoopkunchukuttan/indowordnet_parallel) : Parallel corpora mined from IndoWordNet gloss and/or examples for Indian-Indian language corpora (6.3 million segments, 18 languages including Odia). [Paper](https://github.com/anoopkunchukuttan/indowordnet_parallel/blob/master/iwn_parallel_2020.pdf)
 - [PMIndia](http://data.statmt.org/pmindia/) : Parallel corpus for En-Indian languages mined from Mann ki Baat speeches of the PM of India. It contains 38K English-Odia parallel sentences.[Paper](https://arxiv.org/abs/2001.09907) 
 - [CVIT PIB](https://web.archive.org/web/20231205223617/http://preon.iiit.ac.in/~jerin/bhasha/) : Parallel corpus for En-Indian languages mined from press information bureau website of India. It contains 60K English-Odia parallel sentences.
-- [Samanantar](https://datasets.ai4bharat.org/samanantar/) is the largest publicly available parallel corpora collection for Indic languages. The corpus has 49.6M sentence pairs between English to Indian Languages.
+- [Samanantar](https://ai4bharat.iitm.ac.in/datasets/samanantar/) is the largest publicly available parallel corpora collection for Indic languages. The corpus has 49.6M sentence pairs between English to Indian Languages.
 - [BPCC](https://ai4bharat.iitm.ac.in/areas/nmt) is a comprehensive and publicly available parallel corpus containing a mix of Human labelled data and automatically mined data; totaling to approximately 230 million bitext pairs[[Paper](https://arxiv.org/abs/2305.16307)]].
 - [English–Odia Entertainment Parallel Corpus](https://www.futurebeeai.com/dataset/parallel-corpora/oriya-odia-english-translated-parallel-corpus-for-entertainment-domain) : Domain-specific English–Odia sentence-aligned parallel corpus (50k+ pairs) focused on entertainment content.
 
@@ -185,7 +185,7 @@ Curated list of all AI related resources in Odia Language.
 - [Odia-Santali Dialect Detection Corpus](https://github.com/shantipriyap/Odia-Santali-Dialect-Detection-Dataset/) : This corpus contains text data of Odia and Santali written in Odia script. 
 
 ### Text Classification
-- [Odia News Article Classification](https://www.kaggle.com/disisbig/odia-news-dataset) : This dataset contains approxmately 19,000 news article headlines collected from Odia news websites. The labeled dataset is splitted into training and testset suitable for supervised text classification. 
+- [Odia News Article Classification](https://www.kaggle.com/datasets/disisbig/odia-news-dataset) : This dataset contains approxmately 19,000 news article headlines collected from Odia news websites. The labeled dataset is splitted into training and testset suitable for supervised text classification. 
 - [AI4Bharat IndicNLP News Articles](https://github.com/ai4bharat-indicnlp/indicnlp_corpus) : This datasets comprising news articles and their categories for 9 languages including Odia. For Odia language, it has 4 classes (business, crime, entertainment, sports) and each class contains 7.5K news articles. The dataset is balanced across classes. [Paper](https://github.com/ai4bharat-indicnlp/indicnlp_corpus/blob/master/ai4bharat-indicnlp-corpus-2020.pdf)
 - [MTEB: OdiaNewsClassification](https://huggingface.co/datasets/mteb/OdiaNewsClassification) : A heavily curated 3-class classification testbed comprising over 17,200 journalistic articles. Officially integrated into the MTEB standard.
 - [Odia Sentiment MuRIL v4](https://huggingface.co/Baps24/odia-sentiment-muril-v4) : An advanced sentiment classifier built natively upon the MuRIL framework.
@@ -278,7 +278,7 @@ Curated list of all AI related resources in Odia Language.
 - [SWASTH AI](https://github.com/AsutoshMishra-Engineer/SWASTH-AI-) : Bilingual Odia–English voice health-information and triage web app for rural Odisha using RAG over WHO and Ministry of Health guidance, with Odia TTS; hackathon demo (SIH25049) (MIT).
 
 ## Events
-- Global Conference: [ICON 2024](https://au-kbc.org/icon2024/) | [WAT 2025](https://ufal.mff.cuni.cz/wat2025english-indicmultimodaltranslation) | [Odisha AI Summit 2025 & Conference 2024](https://odishaaisummit.org/) | [2023 Pt 2](https://www.youtube.com/live/KZB9bfKkLgM?si=3i9eY22xT-1yZTD8) [2023 Pt 1](https://www.youtube.com/live/GPkWL-9akQc?si=uh0Ay0SKEVlRnX3U) | [2022](https://www.youtube.com/live/MPrU-3s8ccw?si=gxbOFyfI3j3g8UsH) | [2021](https://www.youtube.com/live/iX59_YJzINs?si=TiZmMMeB6Hy28JcZ) | [2020](https://www.youtube.com/live/PF5DScCr5SI?si=znfuwHbrIgHSzgnO)
+- Global Conference: [ICON 2024](https://au-kbc.org/icon2024/) | [WAT 2025](https://ufal.mff.cuni.cz/wat2025english-indicmultimodaltranslation) | [Odisha AI Summit 2025 & Conference 2024](https://web.archive.org/web/20260118124934/https://odishaaisummit.org/) | [2023 Pt 2](https://www.youtube.com/live/KZB9bfKkLgM?si=3i9eY22xT-1yZTD8) [2023 Pt 1](https://www.youtube.com/live/GPkWL-9akQc?si=uh0Ay0SKEVlRnX3U) | [2022](https://www.youtube.com/live/MPrU-3s8ccw?si=gxbOFyfI3j3g8UsH) | [2021](https://www.youtube.com/live/iX59_YJzINs?si=TiZmMMeB6Hy28JcZ) | [2020](https://www.youtube.com/live/PF5DScCr5SI?si=znfuwHbrIgHSzgnO)
 - Summer School / Workshop: [OdiaGenAI Generative AI Workshops 2025](https://www.odiagenai.org/workshop-2025) | [2022](https://youtube.com/playlist?list=PLQCNXbSwgbGwMW4rGHr_LIfSCMh-7lgbR&si=f_b94K73yVAKST1E)
 
 ## Community
