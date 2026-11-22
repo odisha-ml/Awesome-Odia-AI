@@ -61,7 +61,7 @@ Curated list of all AI related resources in Odia Language.
   
 ### Transliteration
 
-- IndicXlit: [[paper](https://arxiv.org/abs/2205.03018)][[web](https://ai4bharat.iitm.ac.in/areas/xlit)][[code](https://github.com/AI4Bharat/IndicTrans2) ][[Demo](https://transliterate.ai4bharat.org/)][[PyPi](https://pypi.org/project/ai4bharat-transliteration)]
+- IndicXlit: [[paper](https://arxiv.org/abs/2205.03018)][[web](https://ai4bharat.iitm.ac.in/areas/xlit)][[code](https://github.com/AI4Bharat/IndicTrans2) ][[PyPi](https://pypi.org/project/ai4bharat-transliteration)]
 - [open-source unicode converter](https://github.com/OdiaWikimedia/Converter) to transliterate between various languages to Odia language [Demo](https://or.wikipedia.org/s/1hv1).
 
 ### Language Understanding
